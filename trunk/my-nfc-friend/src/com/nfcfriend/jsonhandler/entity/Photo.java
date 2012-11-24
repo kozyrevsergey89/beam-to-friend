@@ -5,10 +5,13 @@ import java.util.ArrayList;
 public class Photo implements FacebookIdentifiable{
 	
 	private String id;
+	private ArrayList<String> tagz;
 
-	private ArrayList<Long> tag;
-
-    @Override
+	public Photo(){
+		tagz = new ArrayList<String>();
+	}
+	
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -17,8 +20,17 @@ public class Photo implements FacebookIdentifiable{
 		this.id = id;
 	}
 
-//	public ArrayList<Long> getTags() {
-//		return new ArrayList<Long>(tags);
-//	}
+	public ArrayList<String> getTagz() {
+		return tagz;
+	}
+
+	public void setTagz(ArrayList<String> tagz) {
+		this.tagz = tagz;
+	}
+	
+	@Override
+	public String toString() {
+		return "Photo [id=" + id + ", tagz=" + tagz + "]";
+	}
 
 }
