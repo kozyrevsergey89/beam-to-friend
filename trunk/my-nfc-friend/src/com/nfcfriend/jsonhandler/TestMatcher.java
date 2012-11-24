@@ -2,6 +2,7 @@ package com.nfcfriend.jsonhandler;
 
 import com.nfcfriend.jsonhandler.entity.FacebookIdentifiable;
 import com.nfcfriend.jsonhandler.entity.Friend;
+import com.nfcfriend.jsonhandler.entity.Like;
 import com.nfcfriend.jsonhandler.entity.MatchedResult;
 import com.nfcfriend.matcher.IdMatcher;
 import com.nfcfriend.matcher.Matcher;
@@ -30,9 +31,10 @@ public class TestMatcher {
 
         Matcher matcher = new IdMatcher();
         List<Friend> matched = (List<Friend>) matcher.findMatches(faceMine.getFriends(), faceYours.getFriends());
-
-
 		System.out.println(matched);
+
+        List<Like> matchedLikes = (List<Like>) matcher.findMatches(faceMine.getLikes(), faceYours.getLikes());
+        System.out.println(matchedLikes);
 		//System.out.println("likes");
 		//System.out.println(facebookJSONObject.getLikes());
 		//System.out.println("posts");

@@ -1325,6 +1325,25 @@
       }
     ], 
     "paging": {
+      "next": "https://graph.facebook.com/100000474643912/friends?fields=id,name&limit=5000&offset=5000&__after_id=100004289501291"
+    }
+  },  
+	 "likes": {
+    "data": [
+      {
+        "id": "148049508572201", 
+        "name": "Kyivstar", 
+        "created_time": "2012-11-23T00:04:13+0000"
+      },
+      {
+        "id": "112936425387489", 
+        "name": "Music", 
+        "created_time": "2010-10-25T02:10:46+0000"
+      }
+    ], 
+ 
+  }, 
+    "paging": {
       "next": "https://graph.facebook.com/537225864/friends?limit=5000&offset=5000&__after_id=100003709980397"
     }
   }
