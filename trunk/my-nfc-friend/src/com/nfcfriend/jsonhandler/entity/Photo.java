@@ -3,21 +3,22 @@ package com.nfcfriend.jsonhandler.entity;
 import java.util.ArrayList;
 
 public class Photo implements FacebookIdentifiable{
-	private Long id;
+	
+	private String id;
 
-	private ArrayList<Long> tags;
+	private ArrayList<Long> tag;
 
     @Override
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
-	public ArrayList<Long> getTags() {
-		return new ArrayList<Long>(tags);
-	}
+//	public ArrayList<Long> getTags() {
+//		return new ArrayList<Long>(tags);
+//	}
 
 }
