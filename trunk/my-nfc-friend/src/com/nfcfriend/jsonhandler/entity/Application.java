@@ -1,6 +1,6 @@
 package com.nfcfriend.jsonhandler.entity;
 
-public class Application {
+public class Application implements FacebookIdentifiable{
 	private String name;
     private Long id;
     
@@ -10,6 +10,8 @@ public class Application {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+    @Override
 	public Long getId() {
 		return id;
 	}

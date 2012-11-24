@@ -1,10 +1,11 @@
 package com.nfcfriend.jsonhandler.entity;
 
-public class Like {
+public class Like implements FacebookIdentifiable{
 
 	private Long id;
     private String name; 
-	
+
+    @Override
     public Long getId() {
 		return id;
 	}
