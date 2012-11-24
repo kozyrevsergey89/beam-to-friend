@@ -6,12 +6,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-public final class TokensMatcher {
+public final class TokensMatcherUtil {
 	
 	//private List<String> tokens;	
 	private Map<String, Pattern> patterns = new HashMap<String, Pattern>();
 	
-	public TokensMatcher(List<String> tokens){
+	public TokensMatcherUtil(List<String> tokens){
 		//List<String> tokens = Collections.unmodifiableList(tokens);
 		for(String token : tokens){
 			Pattern pattern = Pattern.compile(".*(" + token.toLowerCase() + ").*", Pattern.CASE_INSENSITIVE);
