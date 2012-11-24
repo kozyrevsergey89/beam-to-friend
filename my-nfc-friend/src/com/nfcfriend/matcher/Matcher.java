@@ -1,6 +1,7 @@
 package com.nfcfriend.matcher;
 
-import com.nfcfriend.matcher.model.MatchedResult;
+
+import com.nfcfriend.jsonhandler.entity.FacebookIdentifiable;
 
 import java.util.List;
 
