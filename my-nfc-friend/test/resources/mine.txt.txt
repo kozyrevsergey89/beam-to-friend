@@ -19,6 +19,18 @@
         "name": "Graf Liliya", 
         "id": "567667213"
       }, 
+	  {
+        "id": "513467765", 
+        "name": "Luiz Augusto Castanheira Junior"
+      }, 
+      {
+        "id": "529742137", 
+        "name": "Fabricio Scandovieri"
+      }, 
+      {
+        "id": "545920388", 
+        "name": "Alexander Poindexter"
+      }, 
       {
         "name": "Sergii Denega", 
         "id": "575248767"
