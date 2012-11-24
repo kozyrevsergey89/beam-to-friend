@@ -6,6 +6,7 @@ public class Photo implements FacebookIdentifiable{
 	
 	private String id;
 	private ArrayList<String> tagz;
+    private String authorId;
 
 	public Photo(){
 		tagz = new ArrayList<String>();
@@ -27,8 +28,16 @@ public class Photo implements FacebookIdentifiable{
 	public void setTagz(ArrayList<String> tagz) {
 		this.tagz = tagz;
 	}
-	
-	@Override
+
+    public String getAuthorId() {
+        return authorId;
+    }
+
+    public void setAuthorId(String authorId) {
+        this.authorId = authorId;
+    }
+
+    @Override
 	public String toString() {
 		return "Photo [id=" + id + ", tagz=" + tagz + "]";
 	}
