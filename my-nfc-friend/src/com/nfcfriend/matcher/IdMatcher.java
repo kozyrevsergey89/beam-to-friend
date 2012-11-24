@@ -12,7 +12,7 @@ public class IdMatcher implements Matcher<List<FacebookIdentifiable>, FacebookId
 
         List<FacebookIdentifiable> out = new ArrayList<FacebookIdentifiable>(mine.size());
 
-        Map<Long, FacebookIdentifiable> othersMap = new HashMap<Long, FacebookIdentifiable>(yours.size());
+        Map<String, FacebookIdentifiable> othersMap = new HashMap<String, FacebookIdentifiable>(yours.size());
         for(FacebookIdentifiable id : yours){
             othersMap.put(id.getId(), id);
         }

@@ -2,16 +2,16 @@ package com.nfcfriend.jsonhandler.entity;
 
 public class Post implements FacebookIdentifiable{
 
-	private Long  id;
+	private String  id;
 	private String story;
     private String type;
 
     @Override
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
