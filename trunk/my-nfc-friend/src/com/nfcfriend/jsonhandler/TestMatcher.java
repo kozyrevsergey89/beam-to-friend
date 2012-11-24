@@ -1,11 +1,9 @@
 package com.nfcfriend.jsonhandler;
 
-import com.nfcfriend.jsonhandler.entity.FacebookIdentifiable;
-import com.nfcfriend.jsonhandler.entity.Friend;
-import com.nfcfriend.jsonhandler.entity.Like;
-import com.nfcfriend.jsonhandler.entity.MatchedResult;
+import com.nfcfriend.jsonhandler.entity.*;
 import com.nfcfriend.matcher.IdMatcher;
 import com.nfcfriend.matcher.Matcher;
+import com.nfcfriend.matcher.PhotoMatcher;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -45,6 +43,10 @@ public class TestMatcher {
 		//System.out.println(facebookJSONObject.getActivities());
 		//System.out.println("photos");
 		//System.out.println(facebookJSONObject.getPhotos());
+
+        PhotoMatcher photoMatcher = new PhotoMatcher();
+        MatchedResult<Photo> matchedPhotos = photoMatcher.findMatches(faceMine.getPhotos(), faceYours.getPhotos());
+        System.out.println(matchedPhotos);
 	}
 
 	public static JSONObject getJSON(String path) throws IOException, JSONException {
