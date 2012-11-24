@@ -10,9 +10,9 @@ import java.util.Set;
 
 public class TextMatcher implements Matcher<FacebookTextable>{
 	
-	private TokensMatcher matcherUtil;	
+	private TokensMatcherUtil matcherUtil;
 
-	public void setMatcherUtil(TokensMatcher matcherUtil) {
+	public void setMatcherUtil(TokensMatcherUtil matcherUtil) {
 		this.matcherUtil = matcherUtil;
 	}
 
