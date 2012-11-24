@@ -21,7 +21,7 @@ public class TestMatcher {
 		JSONObject jsonMine = getJSON("D:\\max\\projects\\beam-to-friend\\my-nfc-friend\\test\\resources\\mine.txt.txt");
         JSONObject jsonYours = getJSON("D:\\max\\projects\\beam-to-friend\\my-nfc-friend\\test\\resources\\yours.txt.txt");
 		System.out.println("json object");
-		System.out.println(jsonMine);
+		//System.out.println(jsonMine);
 		
 		FacebookJSONObject faceMine = new FacebookJSONObject(jsonMine);
         FacebookJSONObject faceYours = new FacebookJSONObject(jsonYours);
@@ -51,6 +51,11 @@ public class TestMatcher {
 		final JSONObject json = new JSONObject(jsonText);
 		return json;
 	}
+
+    public static JSONObject buildJSON(String text) throws IOException, JSONException {
+
+        return new JSONObject(text);
+    }
 
 	private static String readFile(String path) throws IOException {
 		File file = new File(path);
