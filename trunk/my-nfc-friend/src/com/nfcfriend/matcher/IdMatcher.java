@@ -3,26 +3,28 @@ package com.nfcfriend.matcher;
 import java.util.*;
 
 import com.nfcfriend.matcher.model.FacebookIdentifiable;
+import com.nfcfriend.matcher.model.MatchedResult;
 
 public class IdMatcher implements Matcher<FacebookIdentifiable> {
 	
-	public List<FacebookIdentifiable> findMatches(
+	public MatchedResult<FacebookIdentifiable> findMatches(
 			List<FacebookIdentifiable> mine,
-			List<FacebookIdentifiable> others){
+			List<FacebookIdentifiable> yours){
 
-        List<FacebookIdentifiable> out = new ArrayList<FacebookIdentifiable>();
-        Map<String, FacebookIdentifiable> othersMap = new HashMap<String, FacebookIdentifiable>(others.size());
+        MatchedResult<FacebookIdentifiable> out = new MatchedResult<FacebookIdentifiable>();
 
-        for(FacebookIdentifiable id : others){
+        Map<String, FacebookIdentifiable> othersMap = new HashMap<String, FacebookIdentifiable>(yours.size());
+        for(FacebookIdentifiable id : yours){
             othersMap.put(id.getId(), id);
         }
 
         for(FacebookIdentifiable f : mine){
             if(othersMap.containsKey(f.getId())){
-                out.add(othersMap.get(f.getId()));
+                out.getMine().add(f);
+                out.getOthers().add(othersMap.get(f.getId()));
             }
         }
-		return Collections.unmodifiableList(out);
+		return out;
 		
 	}
 }

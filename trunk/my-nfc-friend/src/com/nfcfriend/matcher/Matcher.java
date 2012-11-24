@@ -1,13 +1,14 @@
 package com.nfcfriend.matcher;
 
+import com.nfcfriend.matcher.model.MatchedResult;
+
 import java.util.List;
 
 
 public interface Matcher <T> {
 	
-	
-	public List<T> findMatches(
-			List<T> first,
-			List<T> second);
+	public MatchedResult<T> findMatches(
+			List<T> mine,
+			List<T> yours);
 
 }
