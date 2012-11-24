@@ -50,15 +50,21 @@ public class FacebookJSONObject {
 		
 		photosList = this.<Photo> getList(new Photo(), "photos");
 
+		String authorId = jsonObject.getString("id");
+		Photo photo;
+		
 		JSONObject photosJSONObject = jsonObject.getJSONObject("photos");
-		JSONArray ja = photosJSONObject.getJSONArray("data");
-		int jaSize = ja.length();
-		JSONObject jo;
+		JSONArray jjosonArray = photosJSONObject.getJSONArray("data");
+		int jsonArrayLength = jjosonArray.length();
+		JSONObject currentJSONObject;
 
-		for (int i = 0; i < jaSize; i++) {
-			jo = ja.getJSONObject(i);
-			tagList = this.<Tag> getList(jo, new Tag(), "tags");
-			photosList.get(i).setTagz(getStringList(tagList));
+		for (int i = 0; i < jsonArrayLength; i++) {
+			currentJSONObject = jjosonArray.getJSONObject(i);
+			tagList = this.<Tag> getList(currentJSONObject, new Tag(), "tags");
+			photo = photosList.get(i);
+			
+			photo.setTagz(getStringList(tagList));
+			photo.setAuthorId(authorId);
 		}
 		return photosList;
 	}

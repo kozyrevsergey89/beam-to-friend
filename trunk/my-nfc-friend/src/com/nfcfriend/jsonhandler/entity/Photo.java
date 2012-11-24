@@ -37,9 +37,10 @@ public class Photo implements FacebookIdentifiable{
         this.authorId = authorId;
     }
 
-    @Override
+	@Override
 	public String toString() {
-		return "Photo [id=" + id + ", tagz=" + tagz + "]";
+		return "Photo [authorId=" + authorId + ", id=" + id + ", tagz=" + tagz + "]";
 	}
 
+    
 }
