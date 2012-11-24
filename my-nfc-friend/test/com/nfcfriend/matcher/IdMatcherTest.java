@@ -11,19 +11,19 @@ public class IdMatcherTest {
 		IdMatcher im = new IdMatcher();
 
 		List<FacebookIdentifiable> ident = im.findMatches(
-                Arrays.asList(identifiable(12345L), identifiable(2222L), identifiable(11111L)),
-				Arrays.asList(identifiable(11111L), identifiable(12345L), identifiable(12345L)));
+                Arrays.asList(identifiable("12345"), identifiable("2222"), identifiable("11111")),
+				Arrays.asList(identifiable("11111"), identifiable("12345"), identifiable("12345")));
 
         assert ident.size() == 2;
         assert ident.size() == 2;
 		
 	}
 	
-	private static FacebookIdentifiable identifiable (final Long id){
+	private static FacebookIdentifiable identifiable (final String id){
 		return new FacebookIdentifiable(){
 			
 			@Override
-			public Long getId(){
+			public String getId(){
 				return id;
 			}
 
