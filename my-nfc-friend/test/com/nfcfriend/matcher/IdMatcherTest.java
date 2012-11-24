@@ -1,30 +1,30 @@
 package com.nfcfriend.matcher;
 
-import com.nfcfriend.matcher.model.FacebookIdentifiable;
-import com.nfcfriend.matcher.model.FacebookTextable;
+import com.nfcfriend.jsonhandler.entity.FacebookIdentifiable;
 import com.nfcfriend.matcher.model.MatchedResult;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class IdMatcherTest {
 	
 	public static void main(String [] args){
 		IdMatcher im = new IdMatcher();
 
-		MatchedResult<FacebookIdentifiable> ident = im.findMatches(
-                Arrays.asList(identifiable("12345"), identifiable("222222"), identifiable("11111")),
-				Arrays.asList(identifiable("11111"), identifiable("12345"), identifiable("12345")));
+		List<FacebookIdentifiable> ident = im.findMatches(
+                Arrays.asList(identifiable(12345L), identifiable(2222L), identifiable(11111L)),
+				Arrays.asList(identifiable(11111L), identifiable(12345L), identifiable(12345L)));
 
-        assert ident.getMine().size() == 2;
-        assert ident.getOthers().size() == 2;
+        assert ident.size() == 2;
+        assert ident.size() == 2;
 		
 	}
 	
-	private static FacebookIdentifiable identifiable (final String id){
+	private static FacebookIdentifiable identifiable (final Long id){
 		return new FacebookIdentifiable(){
 			
 			@Override
-			public String getId(){
+			public Long getId(){
 				return id;
 			}
 

@@ -8,7 +8,7 @@ import com.nfcfriend.matcher.model.MatchedResult;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TextMatcher implements Matcher<FacebookTextable>{
+public class TextMatcher implements Matcher<MatchedResult<FacebookTextable>, FacebookTextable>{
 	
 	private TokensMatcherUtil matcherUtil;
 
