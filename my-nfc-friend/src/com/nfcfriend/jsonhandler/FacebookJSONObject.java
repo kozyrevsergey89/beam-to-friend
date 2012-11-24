@@ -24,70 +24,76 @@ public class FacebookJSONObject {
 		this.jsonObject = jsonObject;
 	}
 
-	public List<Friend> getFriends() throws JSONException {
+	public List<Friend> getFriends() {
 		return this.<Friend> getList(new Friend(), "friends");
 	}
 
-	public List<Like> getLikes() throws JSONException {
+	public List<Like> getLikes() {
 		return this.<Like> getList(new Like(), "likes");
 	}
 
-	public List<Post> getPosts() throws JSONException {
+	public List<Post> getPosts() {
 		return this.<Post> getList(new Post(), "posts");
 	}
 
-	public List<Feed> getFeeds() throws JSONException {
+	public List<Feed> getFeeds() {
 		return this.<Feed> getList(new Feed(), "feed");
 	}
 
-	public List<Activity> getActivities() throws JSONException {
+	public List<Activity> getActivities() {
 		return this.<Activity> getList(new Activity(), "activities");
 	}
 
-	public List<Photo> getPhotos() throws JSONException {
+	public List<Photo> getPhotos() {
 		List<Photo> photosList = new ArrayList<Photo>();
 		List<Tag> tagList = new ArrayList<Tag>();
-		
+
 		photosList = this.<Photo> getList(new Photo(), "photos");
 
-		String authorId = jsonObject.getString("id");
-		Photo photo;
-		
-		JSONObject photosJSONObject = jsonObject.getJSONObject("photos");
-		JSONArray jjosonArray = photosJSONObject.getJSONArray("data");
-		int jsonArrayLength = jjosonArray.length();
-		JSONObject currentJSONObject;
+		try {
 
-		for (int i = 0; i < jsonArrayLength; i++) {
-			currentJSONObject = jjosonArray.getJSONObject(i);
-			tagList = this.<Tag> getList(currentJSONObject, new Tag(), "tags");
-			photo = photosList.get(i);
-			
-			photo.setTagz(getStringList(tagList));
-			photo.setAuthorId(authorId);
+			String authorId = jsonObject.getString("id");
+			Photo photo;
+
+			JSONObject photosJSONObject = jsonObject.getJSONObject("photos");
+			JSONArray jsonArray = photosJSONObject.getJSONArray("data");
+			int jsonArrayLength = jsonArray.length();
+			JSONObject currentJSONObject;
+
+			for (int i = 0; i < jsonArrayLength; i++) {
+				currentJSONObject = jsonArray.getJSONObject(i);
+				tagList = this.<Tag> getList(currentJSONObject, new Tag(),
+						"tags");
+				photo = photosList.get(i);
+
+				photo.setTagz(getStringList(tagList));
+				photo.setAuthorId(authorId);
+			}
+		} catch (JSONException je) {
 		}
 		return photosList;
 	}
 
-	private <T> List<T> getList(T t, String jsonName) throws JSONException {
+	private <T> List<T> getList(T t, String jsonName) {
 		return getList(jsonObject, t, jsonName);
 	}
 
 	@SuppressWarnings("unchecked")
-	private <T> List<T> getList(JSONObject jsonObject, T t, String jsonName)
-			throws JSONException {
+	private <T> List<T> getList(JSONObject jsonObject, T t, String jsonName) {
 
 		Gson gson = new Gson();
 		ArrayList<T> objectList = new ArrayList<T>();
 		T object;
-
-		JSONObject currentJSONObject = jsonObject.getJSONObject(jsonName);
-		JSONArray currentJSONArray = currentJSONObject.getJSONArray("data");
-		int friendsJSONArraysize = currentJSONArray.length();
-		for (int i = 0; i < friendsJSONArraysize; i++) {
-			object = (T) gson.fromJson(currentJSONArray.getJSONObject(i)
-					.toString(), t.getClass());
-			objectList.add(object);
+		try {
+			JSONObject currentJSONObject = jsonObject.getJSONObject(jsonName);
+			JSONArray currentJSONArray = currentJSONObject.getJSONArray("data");
+			int friendsJSONArraysize = currentJSONArray.length();
+			for (int i = 0; i < friendsJSONArraysize; i++) {
+				object = (T) gson.fromJson(currentJSONArray.getJSONObject(i)
+						.toString(), t.getClass());
+				objectList.add(object);
+			}
+		} catch (JSONException je) {
 		}
 		return objectList;
 	}
