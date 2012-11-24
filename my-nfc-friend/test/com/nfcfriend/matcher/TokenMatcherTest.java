@@ -10,7 +10,8 @@ public class TokenMatcherTest {
 		TextMatcher tm = new TextMatcher();
 		tm.setMatcherUtil(new TokensMatcherUtil(Arrays.asList("Apple")));
 		
-		Object o = tm.findMatches(Arrays.asList(textable("Some buulshit comment regarging apple crp"), textable("I like apples")),
+		Object o = tm.findMatches(
+                Arrays.asList(textable("Some buulshit comment regarging apple crp"), textable("I like apples")),
 				Arrays.asList(textable("apples are good"), textable("non app about")));
 		
 	}

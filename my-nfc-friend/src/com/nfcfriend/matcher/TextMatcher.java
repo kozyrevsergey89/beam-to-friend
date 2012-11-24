@@ -1,12 +1,12 @@
 package com.nfcfriend.matcher;
 
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
 import com.nfcfriend.matcher.model.FacebookTextable;
+import com.nfcfriend.matcher.model.MatchedResult;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class TextMatcher implements Matcher<FacebookTextable>{
 	
@@ -20,27 +20,29 @@ public class TextMatcher implements Matcher<FacebookTextable>{
 	 * Finds all records from others matched with mine
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public List<FacebookTextable> findMatches(
+	public MatchedResult<FacebookTextable> findMatches(
 			List<FacebookTextable> mine,
-			List<FacebookTextable> others){		
-		
-		List<FacebookTextable> out = new ArrayList<FacebookTextable>();
-						
-		Set<String> tokens = new HashSet<String>();
+			List<FacebookTextable> yours){
+
+        MatchedResult<FacebookTextable> out = new MatchedResult<FacebookTextable>();
+
+		Multimap<String, FacebookTextable> tokens = ArrayListMultimap.create();
 		for(FacebookTextable item : mine){
-			tokens.addAll(matcherUtil.getAssociatedTokens(item.getText()));
-		}
-		
-		//Multimap<String, String> storage = ArrayListMultimap.create(); 
-		for(FacebookTextable item : others){
-			List<String> othersTokens = matcherUtil.getAssociatedTokens(item.getText());
-			List<String> tokensClone = new ArrayList(tokens);
-			tokensClone.retainAll(othersTokens);
-            if(tokensClone.size() > 0)
-			    out.add(item);
+            for(String token : matcherUtil.getAssociatedTokens(item.getText())){
+			    tokens.put(token, item);
+            }
 		}
 
-		return Collections.unmodifiableList(out);		
+		for(FacebookTextable item : yours){
+			List<String> othersTokens = matcherUtil.getAssociatedTokens(item.getText());
+			List<String> tokensClone = new ArrayList(tokens.keySet());
+			tokensClone.retainAll(othersTokens);
+            if(tokensClone.size() > 0){
+			    out.getMine().addAll(tokens.get(null));
+            }
+		}
+
+		return out;
 		
 	}
 
