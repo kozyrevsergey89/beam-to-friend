@@ -1,0 +1,2078 @@
+{
+  "id": "100000474643912", 
+  "friends": {
+    "data": [
+      {
+        "id": "10229432", 
+        "name": "Joshua Taylor"
+      }, 
+      {
+        "id": "20405684", 
+        "name": "Josh Capdeville"
+      }, 
+      {
+        "id": "504125919", 
+        "name": "Gabriela CM"
+      }, 
+      {
+        "id": "513467765", 
+        "name": "Luiz Augusto Castanheira Junior"
+      }, 
+      {
+        "id": "529742137", 
+        "name": "Fabricio Scandovieri"
+      }, 
+      {
+        "id": "545920388", 
+        "name": "Alexander Poindexter"
+      }, 
+      {
+        "id": "561698731", 
+        "name": "Lisandro Ruas"
+      }, 
+      {
+        "id": "595114725", 
+        "name": "Alena Disiuk"
+      }, 
+      {
+        "id": "602280359", 
+        "name": "Thomas Keaney"
+      }, 
+      {
+        "id": "603153668", 
+        "name": "Maksym Klyuchar"
+      }, 
+      {
+        "id": "656133680", 
+        "name": "Elena Kaloerova"
+      }, 
+      {
+        "id": "662904984", 
+        "name": "Filip Lazarevski"
+      }, 
+      {
+        "id": "677579027", 
+        "name": "Alan Pitts"
+      }, 
+      {
+        "id": "680365039", 
+        "name": "Steffan Gushtanov"
+      }, 
+      {
+        "id": "710800561", 
+        "name": "Bruno Wanderley"
+      }, 
+      {
+        "id": "725025213", 
+        "name": "Andre Mello"
+      }, 
+      {
+        "id": "731016377", 
+        "name": "Artem Gilev"
+      }, 
+      {
+        "id": "774314121", 
+        "name": "Carol Kane"
+      }, 
+      {
+        "id": "783968194", 
+        "name": "Jimmy Acevedo"
+      }, 
+      {
+        "id": "788809596", 
+        "name": "Natalie Genn Sugrue"
+      }, 
+      {
+        "id": "801549423", 
+        "name": "Andrey Shokhanov"
+      }, 
+      {
+        "id": "1033013097", 
+        "name": "Taras Bobrovytskyi"
+      }, 
+      {
+        "id": "1075337187", 
+        "name": "Lucas Crawford"
+      }, 
+      {
+        "id": "1108784301", 
+        "name": "Igor Martynyuk"
+      }, 
+      {
+        "id": "1143282800", 
+        "name": "Victoriia Shador"
+      }, 
+      {
+        "id": "1147713267", 
+        "name": "Julia Trufanova"
+      }, 
+      {
+        "id": "1179033913", 
+        "name": "Alex Artamoshkin"
+      }, 
+      {
+        "id": "1268271213", 
+        "name": "Ruben Kievglam"
+      }, 
+      {
+        "id": "1285912230", 
+        "name": "Denis BukashkOz"
+      }, 
+      {
+        "id": "1303193303", 
+        "name": "Pavlo Tamerkin"
+      }, 
+      {
+        "id": "1321302452", 
+        "name": "Mary Phelan"
+      }, 
+      {
+        "id": "1322791916", 
+        "name": "Robert Sebastian Fuentes"
+      }, 
+      {
+        "id": "1348977643", 
+        "name": "Natasha Lopukhova"
+      }, 
+      {
+        "id": "1350049667", 
+        "name": "Zhanna Akimova"
+      }, 
+      {
+        "id": "1364371868", 
+        "name": "Кирилл Ануфриенко"
+      }, 
+      {
+        "id": "1387111002", 
+        "name": "Victoria Shchepakina"
+      }, 
+      {
+        "id": "1404752502", 
+        "name": "Katerina Dobrovolskaya"
+      }, 
+      {
+        "id": "1406299556", 
+        "name": "Bruno Genovese"
+      }, 
+      {
+        "id": "1413463764", 
+        "name": "Natali Matskiv"
+      }, 
+      {
+        "id": "1425502132", 
+        "name": "Sabrina Alice Mittermueller"
+      }, 
+      {
+        "id": "1462184794", 
+        "name": "Vasyl Kotsiuba"
+      }, 
+      {
+        "id": "1513878174", 
+        "name": "Antonina Veremeeva"
+      }, 
+      {
+        "id": "1624947407", 
+        "name": "Blazing Saddles"
+      }, 
+      {
+        "id": "1658417878", 
+        "name": "Дмитрий Диордийчук"
+      }, 
+      {
+        "id": "1658957805", 
+        "name": "Дмитрий Шатайло"
+      }, 
+      {
+        "id": "1676201366", 
+        "name": "Ksenia Volosovtsova"
+      }, 
+      {
+        "id": "1684085724", 
+        "name": "Вячеслав Штомпель"
+      }, 
+      {
+        "id": "1723291568", 
+        "name": "Елена Добротвор"
+      }, 
+      {
+        "id": "1833648335", 
+        "name": "Igor Nekhaev"
+      }, 
+      {
+        "id": "1839682831", 
+        "name": "Бурій Максим"
+      }, 
+      {
+        "id": "100000072111395", 
+        "name": "Vasiliy Zubach"
+      }, 
+      {
+        "id": "100000130338831", 
+        "name": "Ruslan Samagatski"
+      }, 
+      {
+        "id": "100000134478802", 
+        "name": "Юляша Луканюк"
+      }, 
+      {
+        "id": "100000139756147", 
+        "name": "Kostiantyn Gromak"
+      }, 
+      {
+        "id": "100000145724025", 
+        "name": "Daniel Tobias"
+      }, 
+      {
+        "id": "100000165760944", 
+        "name": "Aleksandr Kovpashko"
+      }, 
+      {
+        "id": "100000227446870", 
+        "name": "Сергей Карпенко"
+      }, 
+      {
+        "id": "100000228597862", 
+        "name": "Роман Одарченко"
+      }, 
+      {
+        "id": "100000228830193", 
+        "name": "Andrii Kapranov"
+      }, 
+      {
+        "id": "100000268032348", 
+        "name": "Anna Shapoval"
+      }, 
+      {
+        "id": "100000294051540", 
+        "name": "Надя Белоусова"
+      }, 
+      {
+        "id": "100000320896139", 
+        "name": "Andrei Garden-man"
+      }, 
+      {
+        "id": "100000389500324", 
+        "name": "Nataly Liubynetskaya"
+      }, 
+      {
+        "id": "100000392573885", 
+        "name": "Ирина Рогоза"
+      }, 
+      {
+        "id": "100000399520475", 
+        "name": "Alexandr Sitov"
+      }, 
+      {
+        "id": "100000430852072", 
+        "name": "Peter Zalizniak"
+      }, 
+      {
+        "id": "100000444020471", 
+        "name": "Zagreba Viacheslav"
+      }, 
+      {
+        "id": "100000459894023", 
+        "name": "Ivan Shcherbakov"
+      }, 
+      {
+        "id": "100000472918317", 
+        "name": "Denys Korniliev"
+      }, 
+      {
+        "id": "100000492799720", 
+        "name": "Олег Нестеров"
+      }, 
+      {
+        "id": "100000522752051", 
+        "name": "Mari Ashikhmina"
+      }, 
+      {
+        "id": "100000525091332", 
+        "name": "Igor Kuzn"
+      }, 
+      {
+        "id": "100000601929141", 
+        "name": "Nikita Lavrentsov"
+      }, 
+      {
+        "id": "100000771572390", 
+        "name": "Ludmila Tyshhuk"
+      }, 
+      {
+        "id": "100000808493050", 
+        "name": "Karolina Kologrieva"
+      }, 
+      {
+        "id": "100000863775291", 
+        "name": "Marina Blinovska"
+      }, 
+      {
+        "id": "100000869272227", 
+        "name": "Alexandr Shevchuk"
+      }, 
+      {
+        "id": "100000873130885", 
+        "name": "Alexander Tkachenko"
+      }, 
+      {
+        "id": "100000875865613", 
+        "name": "Alina Ksendzenko"
+      }, 
+      {
+        "id": "100000882364599", 
+        "name": "Andrew Sherepenko"
+      }, 
+      {
+        "id": "100000958340019", 
+        "name": "Ольга Супрун"
+      }, 
+      {
+        "id": "100000975797117", 
+        "name": "Lera Kravchenko"
+      }, 
+      {
+        "id": "100000998559390", 
+        "name": "Slava Balogh"
+      }, 
+      {
+        "id": "100001004499677", 
+        "name": "Oleksandr Sechko"
+      }, 
+      {
+        "id": "100001070250844", 
+        "name": "Anna Jabuticaba Verbovskaya"
+      }, 
+      {
+        "id": "100001083738952", 
+        "name": "Sergey Zubov"
+      }, 
+      {
+        "id": "100001090301736", 
+        "name": "Iuliia Bezhenar"
+      }, 
+      {
+        "id": "100001098178165", 
+        "name": "Julia Skomorokha"
+      }, 
+      {
+        "id": "100001100100082", 
+        "name": "Dmitry Yakubovsky"
+      }, 
+      {
+        "id": "100001118583267", 
+        "name": "Наталья Сакорская"
+      }, 
+      {
+        "id": "100001149432265", 
+        "name": "Tetyana Shtompel"
+      }, 
+      {
+        "id": "100001150770268", 
+        "name": "Mykhailo Pysarsky"
+      }, 
+      {
+        "id": "100001200731536", 
+        "name": "Olga Chumackova"
+      }, 
+      {
+        "id": "100001230624495", 
+        "name": "Алёнка Гребенькова"
+      }, 
+      {
+        "id": "100001287928222", 
+        "name": "Яна Косенко"
+      }, 
+      {
+        "id": "100001305054571", 
+        "name": "Dmytro Mykolaenko"
+      }, 
+      {
+        "id": "100001305901556", 
+        "name": "Sergey Voronchuk"
+      }, 
+      {
+        "id": "100001415755008", 
+        "name": "Людмила Нефьодова"
+      }, 
+      {
+        "id": "100001443141088", 
+        "name": "Vitaliia Sos"
+      }, 
+      {
+        "id": "100001456461381", 
+        "name": "Євгеній Штомпель"
+      }, 
+      {
+        "id": "100001458484722", 
+        "name": "Dmytro Grabinskyi"
+      }, 
+      {
+        "id": "100001500963368", 
+        "name": "Евгений Белобров"
+      }, 
+      {
+        "id": "100001516651456", 
+        "name": "Taras Neporozhniy"
+      }, 
+      {
+        "id": "100001556136491", 
+        "name": "Maksym Siruk"
+      }, 
+      {
+        "id": "100001577626030", 
+        "name": "Anatoliy Sergienko"
+      }, 
+      {
+        "id": "100001578792359", 
+        "name": "Nika Yasenovskaya"
+      }, 
+      {
+        "id": "100001602203426", 
+        "name": "Ирина Распопина"
+      }, 
+      {
+        "id": "100001614607776", 
+        "name": "Ronnie Follmann"
+      }, 
+      {
+        "id": "100001634513473", 
+        "name": "Inna Iarmoshevych"
+      }, 
+      {
+        "id": "100001640231636", 
+        "name": "Дима Клипинин"
+      }, 
+      {
+        "id": "100001653571647", 
+        "name": "Наталия Устименко"
+      }, 
+      {
+        "id": "100001655669024", 
+        "name": "David Mayboroda"
+      }, 
+      {
+        "id": "100001669547736", 
+        "name": "Тамара Хартишвили"
+      }, 
+      {
+        "id": "100001691574836", 
+        "name": "Женя Гоцюк"
+      }, 
+      {
+        "id": "100001731520178", 
+        "name": "Vitalii Drabchuk"
+      }, 
+      {
+        "id": "100001742288805", 
+        "name": "Daryna Rud"
+      }, 
+      {
+        "id": "100001743038601", 
+        "name": "Дмитро Коломієць"
+      }, 
+      {
+        "id": "100001754497108", 
+        "name": "Сергей Мартынов"
+      }, 
+      {
+        "id": "100001782804560", 
+        "name": "Lera Sitova"
+      }, 
+      {
+        "id": "100001784648060", 
+        "name": "Svetlana Kazmirchuk"
+      }, 
+      {
+        "id": "100001790977447", 
+        "name": "Katerina Verbovskaya"
+      }, 
+      {
+        "id": "100001791728802", 
+        "name": "Андрей Козырев"
+      }, 
+      {
+        "id": "100001795781752", 
+        "name": "Карина Беймар"
+      }, 
+      {
+        "id": "100001799286300", 
+        "name": "Женя Коновалов"
+      }, 
+      {
+        "id": "100001801473313", 
+        "name": "Sergey Bondarenko"
+      }, 
+      {
+        "id": "100001818785771", 
+        "name": "Макс Лукьяненко"
+      }, 
+      {
+        "id": "100001819116618", 
+        "name": "Oleksii Siver"
+      }, 
+      {
+        "id": "100001820327458", 
+        "name": "Evgen Bozhenko"
+      }, 
+      {
+        "id": "100001855458285", 
+        "name": "Natalia Potapova"
+      }, 
+      {
+        "id": "100001857323060", 
+        "name": "Дмитрий Мартынюк"
+      }, 
+      {
+        "id": "100001908511444", 
+        "name": "Artem Tykhonov"
+      }, 
+      {
+        "id": "100001911155833", 
+        "name": "Людмила Копаница"
+      }, 
+      {
+        "id": "100001924011006", 
+        "name": "Daimon Woo"
+      }, 
+      {
+        "id": "100001945060107", 
+        "name": "Igor Ivanchenko"
+      }, 
+      {
+        "id": "100001949633701", 
+        "name": "Oleksandra Chernyshenko"
+      }, 
+      {
+        "id": "100001962520735", 
+        "name": "Nazar Kharlanchuk"
+      }, 
+      {
+        "id": "100001978980328", 
+        "name": "Анатолий Голуб"
+      }, 
+      {
+        "id": "100001995536868", 
+        "name": "Анна Кравчук"
+      }, 
+      {
+        "id": "100002041807603", 
+        "name": "Nikolaj Shevchenko"
+      }, 
+      {
+        "id": "100002045719986", 
+        "name": "Olga Shafran"
+      }, 
+      {
+        "id": "100002046055168", 
+        "name": "Eugene Panchenko"
+      }, 
+      {
+        "id": "100002056013842", 
+        "name": "Denis Rain"
+      }, 
+      {
+        "id": "100002087834221", 
+        "name": "Miguel Jordan"
+      }, 
+      {
+        "id": "100002105267593", 
+        "name": "Anja Tulaydan"
+      }, 
+      {
+        "id": "100002120628971", 
+        "name": "Yuliya Parshenko"
+      }, 
+      {
+        "id": "100002150476888", 
+        "name": "Andrew Badion"
+      }, 
+      {
+        "id": "100002152473836", 
+        "name": "Alina Hodin"
+      }, 
+      {
+        "id": "100002165238792", 
+        "name": "Oleg Levitskiy"
+      }, 
+      {
+        "id": "100002166516907", 
+        "name": "Anna Musina"
+      }, 
+      {
+        "id": "100002175099842", 
+        "name": "Саня Гуров"
+      }, 
+      {
+        "id": "100002176538595", 
+        "name": "Максим Когут"
+      }, 
+      {
+        "id": "100002255402126", 
+        "name": "Konstantin Pekur"
+      }, 
+      {
+        "id": "100002291818979", 
+        "name": "Аннэт Чуяк"
+      }, 
+      {
+        "id": "100002304086904", 
+        "name": "Alex  Sem"
+      }, 
+      {
+        "id": "100002305495881", 
+        "name": "Denis  Artamonov"
+      }, 
+      {
+        "id": "100002318560975", 
+        "name": "Лена Войчишена"
+      }, 
+      {
+        "id": "100002512282766", 
+        "name": "Oleksandr  Sabarin"
+      }, 
+      {
+        "id": "100002519793198", 
+        "name": "Junior Cast"
+      }, 
+      {
+        "id": "100002529518305", 
+        "name": "Ramon Guerra"
+      }, 
+      {
+        "id": "100002536459888", 
+        "name": "Ruslana  Zyubina"
+      }, 
+      {
+        "id": "100002560446880", 
+        "name": "Katerina Dmitrieva"
+      }, 
+      {
+        "id": "100002632230874", 
+        "name": "Сергей Власенко"
+      }, 
+      {
+        "id": "100002680233383", 
+        "name": "Владимир Мосийчук"
+      }, 
+      {
+        "id": "100002730923830", 
+        "name": "Mary  Kropivyanska"
+      }, 
+      {
+        "id": "100002774547554", 
+        "name": "Ira Denysova"
+      }, 
+      {
+        "id": "100002809171001", 
+        "name": "Ramon E Guerra Mata"
+      }, 
+      {
+        "id": "100002933981087", 
+        "name": "Valyeriya  Lisyeyenko"
+      }, 
+      {
+        "id": "100002937663847", 
+        "name": "Yurii  Polischuk"
+      }, 
+      {
+        "id": "100002957020312", 
+        "name": "Daryna Galata"
+      }, 
+      {
+        "id": "100002973905617", 
+        "name": "Nataliya Yazhyk"
+      }, 
+      {
+        "id": "100002991638062", 
+        "name": "Viktor Pasichnyk"
+      }, 
+      {
+        "id": "100003030375674", 
+        "name": "Uliana Semenyuk"
+      }, 
+      {
+        "id": "100003129902688", 
+        "name": "Сергей Демченко"
+      }, 
+      {
+        "id": "100003147761921", 
+        "name": "Aleksey  Markuts"
+      }, 
+      {
+        "id": "100003218744952", 
+        "name": "Виталий Бобров"
+      }, 
+      {
+        "id": "100003265100892", 
+        "name": "Viacheslav  Brik"
+      }, 
+      {
+        "id": "100003303088989", 
+        "name": "Artem  Chmur"
+      }, 
+      {
+        "id": "100003333338709", 
+        "name": "Svetlana  Tyschuk"
+      }, 
+      {
+        "id": "100003338370041", 
+        "name": "Сергей Филатов"
+      }, 
+      {
+        "id": "100003360301132", 
+        "name": "Василий Кушнарев"
+      }, 
+      {
+        "id": "100003486664014", 
+        "name": "Vasyl Khomiak"
+      }, 
+      {
+        "id": "100003552941481", 
+        "name": "Валентина Дерябина"
+      }, 
+      {
+        "id": "100003558391752", 
+        "name": "Вилен Выржаковский"
+      }, 
+      {
+        "id": "100003703331744", 
+        "name": "Liza  Kochkina"
+      }, 
+      {
+        "id": "100003761959767", 
+        "name": "Alexandr  Novikov"
+      }, 
+      {
+        "id": "100004070886187", 
+        "name": "Namson Emah"
+      }, 
+      {
+        "id": "100004289501291", 
+        "name": "Інна Амеліна"
+      }
+    ], 
+    "paging": {
+      "next": "https://graph.facebook.com/100000474643912/friends?fields=id,name&limit=5000&offset=5000&__after_id=100004289501291"
+    }
+  }, 
+  "likes": {
+    "data": [
+      {
+        "id": "148049508572201", 
+        "name": "Kyivstar", 
+        "created_time": "2012-11-23T00:04:13+0000"
+      }, 
+      {
+        "id": "248206855298585", 
+        "name": "Control of Mobile Robots", 
+        "created_time": "2012-10-29T20:11:45+0000"
+      }, 
+      {
+        "id": "116452938391172", 
+        "name": "Luxoft", 
+        "created_time": "2012-10-12T10:44:34+0000"
+      }, 
+      {
+        "id": "416026931785853", 
+        "name": "Учебный Центр \"Сетевые Технологии\"", 
+        "created_time": "2012-10-12T10:10:55+0000"
+      }, 
+      {
+        "id": "205501356160709", 
+        "name": "Batch Requests", 
+        "created_time": "2012-09-19T13:37:39+0000"
+      }, 
+      {
+        "id": "9445547199", 
+        "name": "Facebook Engineering", 
+        "created_time": "2012-09-13T21:21:13+0000"
+      }, 
+      {
+        "id": "20531316728", 
+        "name": "Facebook", 
+        "created_time": "2012-09-13T21:21:05+0000"
+      }, 
+      {
+        "id": "193407944026517", 
+        "name": "Graph API", 
+        "created_time": "2012-09-13T19:08:46+0000"
+      }, 
+      {
+        "id": "130447313766085", 
+        "name": "Обичам съвременното изкуство", 
+        "created_time": "2012-09-04T04:13:36+0000"
+      }, 
+      {
+        "id": "393364824033060", 
+        "name": "Dell", 
+        "created_time": "2012-08-07T18:21:36+0000"
+      }, 
+      {
+        "id": "325332744162761", 
+        "name": "Укргазбанк", 
+        "created_time": "2012-07-17T09:10:01+0000"
+      }, 
+      {
+        "id": "128865963795243", 
+        "name": "Developers.Org.Ua", 
+        "created_time": "2012-06-08T07:39:14+0000"
+      }, 
+      {
+        "id": "121473621223733", 
+        "name": "Агентство путешествий \"НОГИВРУКИ\"", 
+        "created_time": "2012-06-02T12:59:23+0000"
+      }, 
+      {
+        "id": "433812266635963", 
+        "name": "Algorithms, Part I", 
+        "created_time": "2012-04-20T12:06:48+0000"
+      }, 
+      {
+        "id": "286588754736563", 
+        "name": "William Shakespeare", 
+        "created_time": "2012-04-17T07:05:04+0000"
+      }, 
+      {
+        "id": "148219955295820", 
+        "name": "Fyodor Dostoevsky", 
+        "created_time": "2012-04-14T04:44:31+0000"
+      }, 
+      {
+        "id": "204484616255526", 
+        "name": "A.I. Artificial Intelligence", 
+        "created_time": "2012-03-31T14:09:54+0000"
+      }, 
+      {
+        "id": "174822862576234", 
+        "name": "The Truman Show", 
+        "created_time": "2012-03-31T13:20:43+0000"
+      }, 
+      {
+        "id": "256069811108666", 
+        "name": "TechExpert", 
+        "created_time": "2012-03-14T17:07:20+0000"
+      }, 
+      {
+        "id": "174179219354091", 
+        "name": "Udacity", 
+        "created_time": "2012-02-21T09:55:17+0000"
+      }, 
+      {
+        "id": "331288023558058", 
+        "name": "Facebook for Every Phone", 
+        "created_time": "2012-02-03T12:16:45+0000"
+      }, 
+      {
+        "id": "179891438773873", 
+        "name": "Software Engineering for Software as a Service", 
+        "created_time": "2012-01-17T11:16:45+0000"
+      }, 
+      {
+        "id": "222571004485377", 
+        "name": "The Lean Launchpad", 
+        "created_time": "2012-01-17T11:16:20+0000"
+      }, 
+      {
+        "id": "191809477579271", 
+        "name": "Computer Science 101", 
+        "created_time": "2012-01-17T11:15:22+0000"
+      }, 
+      {
+        "id": "281617925218054", 
+        "name": "Technology Entrepreneurship", 
+        "created_time": "2012-01-17T11:14:49+0000"
+      }, 
+      {
+        "id": "104958162837", 
+        "name": "Google", 
+        "created_time": "2011-12-30T07:20:15+0000"
+      }, 
+      {
+        "id": "5676133521", 
+        "name": "Android", 
+        "created_time": "2011-12-30T07:20:07+0000"
+      }, 
+      {
+        "id": "248116567168", 
+        "name": "Oracle University", 
+        "created_time": "2011-11-08T08:39:44+0000"
+      }, 
+      {
+        "id": "113897213765", 
+        "name": "Oracle", 
+        "created_time": "2011-11-08T08:39:31+0000"
+      }, 
+      {
+        "id": "369746649588", 
+        "name": "Football.ua", 
+        "created_time": "2011-11-07T08:41:29+0000"
+      }, 
+      {
+        "id": "161507397278438", 
+        "name": "Constantine", 
+        "created_time": "2011-11-04T21:36:33+0000"
+      }, 
+      {
+        "id": "115205405188758", 
+        "name": "FC SHAKHTAR", 
+        "created_time": "2011-10-28T14:57:56+0000"
+      }, 
+      {
+        "id": "107661675957236", 
+        "name": "Сообщество ИТ-профессионалов Microsoft в Украине", 
+        "created_time": "2011-08-10T20:09:24+0000"
+      }, 
+      {
+        "id": "131189920262167", 
+        "name": "Microsoft Ukraine", 
+        "created_time": "2011-06-15T19:01:49+0000"
+      }, 
+      {
+        "id": "102173226491776", 
+        "name": "Soccer", 
+        "created_time": "2011-04-09T15:28:46+0000"
+      }, 
+      {
+        "id": "108115259216729", 
+        "name": "Innovation", 
+        "created_time": "2011-04-09T15:28:43+0000"
+      }, 
+      {
+        "id": "111050672253385", 
+        "name": "Quantum Computing", 
+        "created_time": "2011-04-09T15:28:38+0000"
+      }, 
+      {
+        "id": "109853102374254", 
+        "name": "Taras Shevchenko", 
+        "created_time": "2011-04-09T15:25:17+0000"
+      }, 
+      {
+        "id": "144917055340", 
+        "name": "LA Lakers", 
+        "created_time": "2011-04-09T15:25:00+0000"
+      }, 
+      {
+        "id": "67920382572", 
+        "name": "Liverpool FC", 
+        "created_time": "2011-04-09T15:24:58+0000"
+      }, 
+      {
+        "id": "285530825204", 
+        "name": "Klitschko", 
+        "created_time": "2011-04-09T15:24:53+0000"
+      }, 
+      {
+        "id": "62975399193", 
+        "name": "Michael Jordan", 
+        "created_time": "2011-04-09T15:24:31+0000"
+      }, 
+      {
+        "id": "17142539281", 
+        "name": "Andriy Shevchenko", 
+        "created_time": "2011-04-09T15:24:27+0000"
+      }, 
+      {
+        "id": "106027519427675", 
+        "name": "Pay It Forward", 
+        "created_time": "2011-04-09T15:21:31+0000"
+      }, 
+      {
+        "id": "107860392569604", 
+        "name": "The Pursuit of Happyness", 
+        "created_time": "2011-04-09T15:21:31+0000"
+      }, 
+      {
+        "id": "112244215467925", 
+        "name": "Green Street Hooligans", 
+        "created_time": "2011-04-09T15:21:31+0000"
+      }, 
+      {
+        "id": "112712355411210", 
+        "name": "Brigada", 
+        "created_time": "2011-04-09T15:21:30+0000"
+      }, 
+      {
+        "id": "113277668682335", 
+        "name": "Space Jam", 
+        "created_time": "2011-04-09T15:21:30+0000"
+      }, 
+      {
+        "id": "110663145625091", 
+        "name": "Pushkin", 
+        "created_time": "2011-04-09T15:21:30+0000"
+      }, 
+      {
+        "id": "114430431906161", 
+        "name": "Dostoevsky", 
+        "created_time": "2011-04-09T15:21:30+0000"
+      }, 
+      {
+        "id": "108357189196052", 
+        "name": "Shakespeare", 
+        "created_time": "2011-04-09T15:21:29+0000"
+      }, 
+      {
+        "id": "114619448554142", 
+        "name": "Rhcp", 
+        "created_time": "2011-04-09T15:21:28+0000"
+      }, 
+      {
+        "id": "5678046685", 
+        "name": "U2", 
+        "created_time": "2011-04-09T15:21:28+0000"
+      }, 
+      {
+        "id": "6248267085", 
+        "name": "Nickelback", 
+        "created_time": "2011-04-09T15:21:28+0000"
+      }, 
+      {
+        "id": "6599991950", 
+        "name": "Three Days Grace", 
+        "created_time": "2011-04-09T15:21:28+0000"
+      }, 
+      {
+        "id": "8210451787", 
+        "name": "Linkin Park", 
+        "created_time": "2011-04-09T15:21:28+0000"
+      }, 
+      {
+        "id": "9297927892", 
+        "name": "My Chemical Romance", 
+        "created_time": "2011-04-09T15:21:28+0000"
+      }, 
+      {
+        "id": "104027109632575", 
+        "name": "Instrumental", 
+        "created_time": "2011-04-09T15:21:28+0000"
+      }, 
+      {
+        "id": "12626353545", 
+        "name": "Tiësto", 
+        "created_time": "2011-04-09T15:21:27+0000"
+      }, 
+      {
+        "id": "25498833315", 
+        "name": "Armin van Buuren", 
+        "created_time": "2011-04-09T15:21:27+0000"
+      }, 
+      {
+        "id": "45309870078", 
+        "name": "Eminem", 
+        "created_time": "2011-04-09T15:21:27+0000"
+      }, 
+      {
+        "id": "95373948214", 
+        "name": "Blazing Saddles Bike Rentals", 
+        "created_time": "2010-10-27T04:17:21+0000"
+      }, 
+      {
+        "id": "108192509215182", 
+        "name": "Lermontov", 
+        "created_time": "2010-10-25T02:10:47+0000"
+      }, 
+      {
+        "id": "110534865635330", 
+        "name": "Traveling", 
+        "created_time": "2010-10-25T02:10:46+0000"
+      }, 
+      {
+        "id": "108065625881077", 
+        "name": "Information security", 
+        "created_time": "2010-10-25T02:10:46+0000"
+      }, 
+      {
+        "id": "112936425387489", 
+        "name": "Music", 
+        "created_time": "2010-10-25T02:10:46+0000"
+      }, 
+      {
+        "id": "108614982500363", 
+        "name": "Basketball", 
+        "created_time": "2010-10-25T02:10:46+0000"
+      }, 
+      {
+        "id": "115146198497662", 
+        "name": "Poems", 
+        "created_time": "2010-10-25T02:10:45+0000"
+      }, 
+      {
+        "id": "108196582538810", 
+        "name": "Science", 
+        "created_time": "2010-10-25T02:10:45+0000"
+      }, 
+      {
+        "id": "110914588933878", 
+        "name": "Yesman", 
+        "created_time": "2010-05-12T21:53:38+0000"
+      }, 
+      {
+        "id": "114371035246890", 
+        "name": "Ping Pong"
+      }, 
+      {
+        "id": "107738909246702", 
+        "name": "Beach volleyball"
+      }
+    ], 
+    "paging": {
+      "next": "https://graph.facebook.com/100000474643912/likes?fields=id,name&limit=5000&offset=5000&__after_id=107738909246702"
+    }
+  }, 
+  "activities": {
+    "data": [
+      {
+        "name": "Soccer", 
+        "category": "Sport", 
+        "id": "102173226491776", 
+        "created_time": "2011-04-09T15:28:46+0000"
+      }, 
+      {
+        "name": "Music", 
+        "category": "Field of study", 
+        "id": "112936425387489", 
+        "created_time": "2010-10-25T02:10:46+0000"
+      }, 
+      {
+        "name": "Basketball", 
+        "category": "Sport", 
+        "id": "108614982500363", 
+        "created_time": "2010-10-25T02:10:46+0000"
+      }, 
+      {
+        "name": "Poems", 
+        "category": "Book genre", 
+        "id": "115146198497662", 
+        "created_time": "2010-10-25T02:10:45+0000"
+      }, 
+      {
+        "name": "Science", 
+        "category": "Interest", 
+        "id": "108196582538810", 
+        "created_time": "2010-10-25T02:10:45+0000"
+      }
+    ], 
+    "paging": {
+      "next": "https://graph.facebook.com/100000474643912/activities?limit=5000&offset=5000&__after_id=108196582538810"
+    }
+  }, 
+  "photos": {
+    "data": [
+      {
+        "id": "417360604985819", 
+        "created_time": "2012-10-15T06:49:26+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417360604985819/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417360538319159", 
+        "created_time": "2012-10-15T06:49:22+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417360538319159/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417360461652500", 
+        "created_time": "2012-10-15T06:49:18+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417360461652500/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417360441652502", 
+        "created_time": "2012-10-15T06:49:14+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100003147761921"
+            }, 
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417360441652502/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417359258319287", 
+        "created_time": "2012-10-15T06:41:37+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417359258319287/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417359204985959", 
+        "created_time": "2012-10-15T06:41:34+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417359204985959/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417359151652631", 
+        "created_time": "2012-10-15T06:41:30+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417359151652631/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417359108319302", 
+        "created_time": "2012-10-15T06:41:26+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417359108319302/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417359078319305", 
+        "created_time": "2012-10-15T06:41:23+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417359078319305/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417359038319309", 
+        "created_time": "2012-10-15T06:41:19+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417359038319309/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417359008319312", 
+        "created_time": "2012-10-15T06:41:15+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417359008319312/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417358964985983", 
+        "created_time": "2012-10-15T06:41:12+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417358964985983/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "417358948319318", 
+        "created_time": "2012-10-15T06:41:08+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417358948319318/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "244132075662757", 
+        "created_time": "2012-02-03T13:56:55+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100003173867605"
+            }, 
+            {
+              "id": "100000020906790"
+            }, 
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/244132075662757/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "3027055392401", 
+        "created_time": "2012-01-10T21:03:24+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }, 
+            {
+              "id": "100001020393816"
+            }, 
+            {
+              "id": "100000472918317"
+            }, 
+            {
+              "id": "595114725"
+            }, 
+            {
+              "id": "100000665702995"
+            }, 
+            {
+              "id": "100000158590452"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/3027055392401/tags?fields=id&limit=5000&offset=5000&__after_id=100000158590452"
+          }
+        }
+      }, 
+      {
+        "id": "282389055127295", 
+        "created_time": "2011-10-31T22:15:35+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }, 
+            {
+              "id": "100001634513473"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/282389055127295/tags?fields=id&limit=5000&offset=5000&__after_id=100001634513473"
+          }
+        }
+      }, 
+      {
+        "id": "280512255314975", 
+        "created_time": "2011-10-27T17:41:58+0000", 
+        "comments": {
+          "data": [
+            {
+              "id": "280512255314975_761644", 
+              "created_time": "2011-12-02T13:16:27+0000"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/280512255314975/comments?fields=id&limit=25&offset=25&__after_id=280512255314975_761644"
+          }
+        }, 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/280512255314975/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }, 
+        "sharedposts": {
+          "data": [
+            {
+              "id": "100000474643912_233379586723630", 
+              "created_time": "2011-10-28T06:53:58+0000"
+            }
+          ]
+        }
+      }, 
+      {
+        "id": "2473996970452", 
+        "created_time": "2011-10-17T12:51:16+0000", 
+        "comments": {
+          "data": [
+            {
+              "id": "2473996970452_2014800", 
+              "created_time": "2011-10-17T13:00:32+0000"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/2473996970452/comments?fields=id&limit=25&offset=25&__after_id=2473996970452_2014800"
+          }
+        }, 
+        "tags": {
+          "data": [
+            {
+              "id": "100002617650081"
+            }, 
+            {
+              "id": "1413463764"
+            }, 
+            {
+              "id": "100000474643912"
+            }, 
+            {
+              "id": "100001634513473"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/2473996970452/tags?fields=id&limit=5000&offset=5000&__after_id=100001634513473"
+          }
+        }
+      }, 
+      {
+        "id": "100458763391096", 
+        "created_time": "2011-08-12T01:37:57+0000", 
+        "comments": {
+          "data": [
+            {
+              "id": "100458763391096_735", 
+              "created_time": "2011-08-14T00:19:32+0000"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/100458763391096/comments?fields=id&limit=25&offset=25&__after_id=100458763391096_735"
+          }
+        }, 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/100458763391096/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "118828656377", 
+        "created_time": "2009-08-09T17:26:23+0000", 
+        "comments": {
+          "data": [
+            {
+              "id": "118828656377_1237817", 
+              "created_time": "2009-08-10T04:14:52+0000"
+            }, 
+            {
+              "id": "118828656377_1238368", 
+              "created_time": "2009-08-10T08:13:19+0000"
+            }, 
+            {
+              "id": "118828656377_1238447", 
+              "created_time": "2009-08-10T09:23:36+0000"
+            }, 
+            {
+              "id": "118828656377_3779000", 
+              "created_time": "2011-02-26T14:20:29+0000"
+            }, 
+            {
+              "id": "118828656377_4014799", 
+              "created_time": "2011-04-09T07:50:06+0000"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/118828656377/comments?fields=id&limit=25&offset=25&__after_id=118828656377_4014799"
+          }
+        }, 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }, 
+            {
+              "id": "100000601929141"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/118828656377/tags?fields=id&limit=5000&offset=5000&__after_id=100000601929141"
+          }
+        }
+      }, 
+      {
+        "id": "118828661377", 
+        "created_time": "2009-08-09T17:26:23+0000", 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }, 
+            {
+              "id": "100000601929141"
+            }, 
+            {
+              "id": "1833648335"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/118828661377/tags?fields=id&limit=5000&offset=5000&__after_id=1833648335"
+          }
+        }
+      }, 
+      {
+        "id": "118828671377", 
+        "created_time": "2009-08-09T17:26:23+0000", 
+        "comments": {
+          "data": [
+            {
+              "id": "118828671377_3757030", 
+              "created_time": "2011-02-22T09:33:29+0000"
+            }, 
+            {
+              "id": "118828671377_3762148", 
+              "created_time": "2011-02-23T05:00:23+0000"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/118828671377/comments?fields=id&limit=25&offset=25&__after_id=118828671377_3762148"
+          }
+        }, 
+        "tags": {
+          "data": [
+            {
+              "id": "100000474643912"
+            }, 
+            {
+              "id": "1833648335"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/118828671377/tags?fields=id&limit=5000&offset=5000&__after_id=1833648335"
+          }
+        }
+      }, 
+      {
+        "id": "118825751377", 
+        "created_time": "2009-08-09T17:22:49+0000", 
+        "comments": {
+          "data": [
+            {
+              "id": "118825751377_3778998", 
+              "created_time": "2011-02-26T14:20:05+0000"
+            }, 
+            {
+              "id": "118825751377_4188809", 
+              "created_time": "2011-05-09T04:43:29+0000"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/118825751377/comments?fields=id&limit=25&offset=25&__after_id=118825751377_4188809"
+          }
+        }, 
+        "tags": {
+          "data": [
+            {
+              "id": "1833648335"
+            }, 
+            {
+              "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/118825751377/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }, 
+      {
+        "id": "118825156377", 
+        "created_time": "2009-08-09T17:21:37+0000", 
+        "comments": {
+          "data": [
+            {
+              "id": "118825156377_1237807", 
+              "created_time": "2009-08-10T04:13:40+0000"
+            }, 
+            {
+              "id": "118825156377_1238363", 
+              "created_time": "2009-08-10T08:11:40+0000"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/118825156377/comments?fields=id&limit=25&offset=25&__after_id=118825156377_1238363"
+          }
+        }, 
+        "tags": {
+          "data": [
+            {
+              "id": "100000601929141"
+            }, 
+            {
+              "id": "100000474643912"
+            }, 
+            {
+              "id": "1833648335"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/118825156377/tags?fields=id&limit=5000&offset=5000&__after_id=1833648335"
+          }
+        }
+      }
+    ], 
+    "paging": {
+      "previous": "https://graph.facebook.com/100000474643912/photos?fields=id,comments.fields(id),tags.fields(id),sharedposts.fields(id)&limit=25&since=1350283766", 
+      "next": "https://graph.facebook.com/100000474643912/photos?fields=id,comments.fields(id),tags.fields(id),sharedposts.fields(id)&limit=25&until=1249838496"
+    }
+  }, 
+  "posts": {
+    "data": [
+      {
+        "id": "100000474643912_300932280006693", 
+        "type": "link", 
+        "created_time": "2012-11-23T00:04:23+0000"
+      }, 
+      {
+        "id": "100000474643912_549281281764355", 
+        "story": "Sergii Kozyrev likes Kyivstar.", 
+        "type": "link", 
+        "created_time": "2012-11-23T00:04:13+0000"
+      }, 
+      {
+        "id": "100000474643912_383664498377690", 
+        "story": "Sergii Kozyrev shared a link.", 
+        "type": "video", 
+        "via": {
+          "name": "Aleksandr Kovpashko", 
+          "id": "100000165760944"
+        }, 
+        "created_time": "2012-11-22T08:12:59+0000"
+      }, 
+      {
+        "id": "100000474643912_374628875960114", 
+        "type": "link", 
+        "created_time": "2012-11-21T14:03:14+0000"
+      }, 
+      {
+        "id": "100000474643912_449372301786138", 
+        "story": "Sergii Kozyrev shared a link.", 
+        "type": "link", 
+        "created_time": "2012-11-21T09:04:41+0000"
+      }, 
+      {
+        "id": "100000474643912_281644435290087", 
+        "story": "Sergii Kozyrev shared a link.", 
+        "type": "link", 
+        "via": {
+          "name": "Учебный Центр \"Сетевые Технологии\"", 
+          "category": "Education", 
+          "id": "416026931785853"
+        }, 
+        "created_time": "2012-11-19T07:49:31+0000"
+      }, 
+      {
+        "id": "100000474643912_439173882798456", 
+        "story": "Sergii Kozyrev shared Учебный Центр \"Сетевые Технологии\"'s album: Фотоархив Сергей Козырев.", 
+        "type": "photo", 
+        "object_id": "428467927208420", 
+        "created_time": "2012-11-16T08:01:36+0000"
+      }, 
+      {
+        "id": "100000474643912_546015802090903", 
+        "story": "\"fun photos))))\" on Hyunmin Kim's photo.", 
+        "type": "status", 
+        "created_time": "2012-11-15T21:32:57+0000"
+      }, 
+      {
+        "id": "100000474643912_397846290292252", 
+        "type": "link", 
+        "via": {
+          "name": "Учебный Центр \"Сетевые Технологии\"", 
+          "category": "Education", 
+          "id": "416026931785853"
+        }, 
+        "created_time": "2012-11-15T12:49:30+0000"
+      }, 
+      {
+        "id": "100000474643912_506325822719342", 
+        "story": "Sergii Kozyrev shared Учебный Центр \"Сетевые Технологии\"'s album: Azure Workshop for IT specialists & developers.", 
+        "type": "photo", 
+        "object_id": "417358948319318", 
+        "created_time": "2012-11-15T12:47:45+0000"
+      }, 
+      {
+        "id": "100000474643912_448113765226199", 
+        "story": "Sergii Kozyrev shared Учебный Центр \"Сетевые Технологии\"'s album: Полигон 2012: Windows Server 2012 новые возможности.", 
+        "type": "photo", 
+        "object_id": "417432184978661", 
+        "created_time": "2012-11-15T12:47:36+0000"
+      }, 
+      {
+        "id": "100000474643912_545823738776776", 
+        "story": "Sergii Kozyrev likes Учебный Центр \"Сетевые Технологии\"'s album Полигон 2012: Windows Server 2012 новые возможности.", 
+        "type": "status", 
+        "created_time": "2012-11-15T12:47:33+0000"
+      }, 
+      {
+        "id": "100000474643912_124566997700999", 
+        "story": "Sergii Kozyrev shared Наталия Александровская's photo.", 
+        "type": "photo", 
+        "object_id": "3311789093768", 
+        "created_time": "2012-11-12T14:24:48+0000"
+      }, 
+      {
+        "id": "100000474643912_481958205181839", 
+        "story": "Sergii Kozyrev shared Min Kyoung Choi's photo.", 
+        "type": "photo", 
+        "object_id": "4393594571831", 
+        "created_time": "2012-11-09T09:47:30+0000"
+      }, 
+      {
+        "id": "100000474643912_543074089051741", 
+        "story": "\"Great photo! Dream Team on the...\" on Min Kyoung Choi's photo.", 
+        "type": "status", 
+        "created_time": "2012-11-09T09:42:32+0000"
+      }, 
+      {
+        "id": "100000474643912_541352125890604", 
+        "story": "Sergii Kozyrev likes a photo.", 
+        "type": "status", 
+        "created_time": "2012-11-05T15:43:33+0000"
+      }, 
+      {
+        "id": "100000474643912_539263062766177", 
+        "story": "Sergii Kozyrev and Maksym Klyuchar are now friends.", 
+        "type": "status", 
+        "created_time": "2012-11-01T08:05:21+0000"
+      }, 
+      {
+        "id": "100000474643912_538954369463713", 
+        "story": "\"Ну наконец-то))\" on Сообщество ИТ-профессионалов Microsoft в Украине's link.", 
+        "type": "status", 
+        "created_time": "2012-10-31T15:59:07+0000"
+      }, 
+      {
+        "id": "100000474643912_292472800852243", 
+        "story": "Sergii Kozyrev shared a link.", 
+        "type": "link", 
+        "created_time": "2012-10-29T20:12:08+0000"
+      }, 
+      {
+        "id": "100000474643912_538049026220914", 
+        "story": "Sergii Kozyrev likes a link.", 
+        "type": "link", 
+        "created_time": "2012-10-29T20:11:45+0000"
+      }, 
+      {
+        "id": "100000474643912_536161079743042", 
+        "story": "Sergii Kozyrev likes a link.", 
+        "type": "status", 
+        "created_time": "2012-10-26T11:39:32+0000"
+      }, 
+      {
+        "id": "100000474643912_534706823221801", 
+        "story": "Sergii Kozyrev likes a link.", 
+        "type": "status", 
+        "created_time": "2012-10-23T11:54:37+0000"
+      }, 
+      {
+        "id": "100000474643912_532355873456896", 
+        "story": "Sergii Kozyrev likes a link.", 
+        "type": "status", 
+        "created_time": "2012-10-18T13:34:01+0000"
+      }, 
+      {
+        "id": "100000474643912_531364070222743", 
+        "story": "Sergii Kozyrev likes his own photo.", 
+        "type": "status", 
+        "created_time": "2012-10-16T11:34:48+0000"
+      }, 
+      {
+        "id": "100000474643912_531353590223791", 
+        "type": "photo", 
+        "object_id": "531353550223795", 
+        "created_time": "2012-10-16T11:03:33+0000"
+      }
+    ], 
+    "paging": {
+      "previous": "https://graph.facebook.com/100000474643912/posts?fields=id,story,type,via,object_id&limit=25&since=1353629063", 
+      "next": "https://graph.facebook.com/100000474643912/posts?fields=id,story,type,via,object_id&limit=25&until=1350385412"
+    }
+  }, 
+  "feed": {
+    "data": [
+      {
+        "id": "100000474643912_300932280006693", 
+        "application": {
+          "name": "Iнтернет без меж", 
+          "id": "388681871203953"
+        }, 
+        "created_time": "2012-11-23T00:04:23+0000"
+      }, 
+      {
+        "id": "100000474643912_549281281764355", 
+        "story": "Sergii Kozyrev likes Kyivstar.", 
+        "application": {
+          "name": "Pages", 
+          "id": "2530096808"
+        }, 
+        "created_time": "2012-11-23T00:04:13+0000"
+      }, 
+      {
+        "id": "100000474643912_383664498377690", 
+        "story": "Sergii Kozyrev shared a link.", 
+        "via": {
+          "name": "Aleksandr Kovpashko", 
+          "id": "100000165760944"
+        }, 
+        "application": {
+          "name": "Links", 
+          "id": "2309869772"
+        }, 
+        "created_time": "2012-11-22T08:12:59+0000"
+      }, 
+      {
+        "id": "100000474643912_374628875960114", 
+        "created_time": "2012-11-21T14:03:14+0000"
+      }, 
+      {
+        "id": "100000474643912_449372301786138", 
+        "story": "Sergii Kozyrev shared a link.", 
+        "application": {
+          "name": "Share_bookmarklet", 
+          "id": "5085647995"
+        }, 
+        "created_time": "2012-11-21T09:04:41+0000"
+      }, 
+      {
+        "id": "100000474643912_281644435290087", 
+        "story": "Sergii Kozyrev shared a link.", 
+        "via": {
+          "name": "Учебный Центр \"Сетевые Технологии\"", 
+          "category": "Education", 
+          "id": "416026931785853"
+        }, 
+        "application": {
+          "name": "Links", 
+          "id": "2309869772"
+        }, 
+        "created_time": "2012-11-19T07:49:31+0000"
+      }, 
+      {
+        "id": "100000474643912_439173882798456", 
+        "story": "Sergii Kozyrev shared Учебный Центр \"Сетевые Технологии\"'s album: Фотоархив Сергей Козырев.", 
+        "application": {
+          "name": "Photos", 
+          "id": "2305272732"
+        }, 
+        "object_id": "428467927208420", 
+        "created_time": "2012-11-16T08:01:36+0000"
+      }, 
+      {
+        "id": "100000474643912_546015802090903", 
+        "story": "\"fun photos))))\" on Hyunmin Kim's photo.", 
+        "application": {
+          "name": "Photos", 
+          "id": "2305272732"
+        }, 
+        "created_time": "2012-11-15T21:32:57+0000"
+      }, 
+      {
+        "id": "100000474643912_397846290292252", 
+        "via": {
+          "name": "Учебный Центр \"Сетевые Технологии\"", 
+          "category": "Education", 
+          "id": "416026931785853"
+        }, 
+        "application": {
+          "name": "Links", 
+          "id": "2309869772"
+        }, 
+        "created_time": "2012-11-15T12:49:30+0000"
+      }, 
+      {
+        "id": "100000474643912_506325822719342", 
+        "story": "Sergii Kozyrev shared Учебный Центр \"Сетевые Технологии\"'s album: Azure Workshop for IT specialists & developers.", 
+        "application": {
+          "name": "Photos", 
+          "id": "2305272732"
+        }, 
+        "object_id": "417358948319318", 
+        "created_time": "2012-11-15T12:47:45+0000"
+      }, 
+      {
+        "id": "100000474643912_448113765226199", 
+        "story": "Sergii Kozyrev shared Учебный Центр \"Сетевые Технологии\"'s album: Полигон 2012: Windows Server 2012 новые возможности.", 
+        "application": {
+          "name": "Photos", 
+          "id": "2305272732"
+        }, 
+        "object_id": "417432184978661", 
+        "created_time": "2012-11-15T12:47:36+0000"
+      }, 
+      {
+        "id": "100000474643912_545823738776776", 
+        "story": "Sergii Kozyrev likes Учебный Центр \"Сетевые Технологии\"'s album Полигон 2012: Windows Server 2012 новые возможности.", 
+        "created_time": "2012-11-15T12:47:33+0000"
+      }, 
+      {
+        "id": "100000474643912_124566997700999", 
+        "story": "Sergii Kozyrev shared Наталия Александровская's photo.", 
+        "application": {
+          "name": "Links", 
+          "id": "2309869772"
+        }, 
+        "object_id": "3311789093768", 
+        "created_time": "2012-11-12T14:24:48+0000"
+      }, 
+      {
+        "id": "100000474643912_481958205181839", 
+        "story": "Sergii Kozyrev shared Min Kyoung Choi's photo.", 
+        "application": {
+          "name": "Photos", 
+          "id": "2305272732"
+        }, 
+        "object_id": "4393594571831", 
+        "created_time": "2012-11-09T09:47:30+0000"
+      }, 
+      {
+        "id": "100000474643912_543074089051741", 
+        "story": "\"Great photo! Dream Team on the...\" on Min Kyoung Choi's photo.", 
+        "application": {
+          "name": "Facebook for Android", 
+          "namespace": "fbandroid", 
+          "id": "350685531728"
+        }, 
+        "created_time": "2012-11-09T09:42:32+0000"
+      }, 
+      {
+        "id": "100000474643912_541352125890604", 
+        "story": "Sergii Kozyrev likes a photo.", 
+        "created_time": "2012-11-05T15:43:33+0000"
+      }, 
+      {
+        "id": "100000474643912_539263062766177", 
+        "story": "Sergii Kozyrev and Maksym Klyuchar are now friends.", 
+        "created_time": "2012-11-01T08:05:21+0000"
+      }, 
+      {
+        "id": "100000474643912_538954369463713", 
+        "story": "\"Ну наконец-то))\" on Сообщество ИТ-профессионалов Microsoft в Украине's link.", 
+        "created_time": "2012-10-31T15:59:07+0000"
+      }, 
+      {
+        "id": "100000474643912_292472800852243", 
+        "story": "Sergii Kozyrev shared a link.", 
+        "application": {
+          "name": "Likes", 
+          "id": "2409997254"
+        }, 
+        "created_time": "2012-10-29T20:12:08+0000"
+      }, 
+      {
+        "id": "100000474643912_538049026220914", 
+        "story": "Sergii Kozyrev likes a link.", 
+        "application": {
+          "name": "Likes", 
+          "id": "2409997254"
+        }, 
+        "created_time": "2012-10-29T20:11:45+0000"
+      }, 
+      {
+        "id": "100000474643912_536161079743042", 
+        "story": "Sergii Kozyrev likes a link.", 
+        "application": {
+          "name": "Likes", 
+          "id": "2409997254"
+        }, 
+        "created_time": "2012-10-26T11:39:32+0000"
+      }, 
+      {
+        "id": "100000474643912_534706823221801", 
+        "story": "Sergii Kozyrev likes a link.", 
+        "application": {
+          "name": "Likes", 
+          "id": "2409997254"
+        }, 
+        "created_time": "2012-10-23T11:54:37+0000"
+      }, 
+      {
+        "id": "100000474643912_532382943454189", 
+        "application": {
+          "name": "Likes", 
+          "namespace": "likes", 
+          "id": "193048140809145"
+        }, 
+        "created_time": "2012-10-18T14:45:45+0000"
+      }, 
+      {
+        "id": "100000474643912_532355873456896", 
+        "story": "Sergii Kozyrev likes a link.", 
+        "application": {
+          "name": "Likes", 
+          "id": "2409997254"
+        }, 
+        "created_time": "2012-10-18T13:34:01+0000"
+      }, 
+      {
+        "id": "100000474643912_531364070222743", 
+        "story": "Sergii Kozyrev likes his own photo.", 
+        "application": {
+          "name": "Likes", 
+          "id": "2409997254"
+        }, 
+        "created_time": "2012-10-16T11:34:48+0000"
+      }
+    ], 
+    "paging": {
+      "previous": "https://graph.facebook.com/100000474643912/feed?fields=id,story,via,application,object_id&limit=25&since=1353629063", 
+      "next": "https://graph.facebook.com/100000474643912/feed?fields=id,story,via,application,object_id&limit=25&until=1350387287"
+    }
+  }
+}

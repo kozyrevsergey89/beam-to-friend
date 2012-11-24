@@ -3,12 +3,15 @@ package com.nfcfriend.matcher;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 import com.nfcfriend.matcher.model.FacebookTextable;
-import com.nfcfriend.matcher.model.MatchedResult;
+import com.nfcfriend.jsonhandler.entity.MatchedResult;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
-public class TextMatcher implements Matcher<MatchedResult<FacebookTextable>, FacebookTextable>{
+public class TextMatcher implements Matcher<Map<String, MatchedResult<FacebookTextable>>, FacebookTextable>{
 	
 	private TokensMatcherUtil matcherUtil;
 
@@ -18,13 +21,16 @@ public class TextMatcher implements Matcher<MatchedResult<FacebookTextable>, Fac
 
 	/**
 	 * Finds all records from others matched with mine
+     * returns
+     * map: token -> result (list-mine, list-yours) with comments
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public MatchedResult<FacebookTextable> findMatches(
+	public Map<String, MatchedResult<FacebookTextable>> findMatches(
 			List<FacebookTextable> mine,
 			List<FacebookTextable> yours){
 
-        MatchedResult<FacebookTextable> out = new MatchedResult<FacebookTextable>();
+        ConcurrentMap<String, MatchedResult<FacebookTextable>> out =
+                                        new ConcurrentHashMap<String, MatchedResult<FacebookTextable>>();
 
 		Multimap<String, FacebookTextable> tokens = ArrayListMultimap.create();
 		for(FacebookTextable item : mine){
@@ -38,7 +44,12 @@ public class TextMatcher implements Matcher<MatchedResult<FacebookTextable>, Fac
 			List<String> tokensClone = new ArrayList(tokens.keySet());
 			tokensClone.retainAll(othersTokens);
             if(tokensClone.size() > 0){
-			    out.getMine().addAll(tokens.get(null));
+                for(String both : tokensClone){
+                    if(out.containsKey(both)){
+			            out.get(both).getMine().addAll(tokens.get(both));
+                        out.get(both).getOthers().add(item);
+                    }
+                }
             }
 		}
 

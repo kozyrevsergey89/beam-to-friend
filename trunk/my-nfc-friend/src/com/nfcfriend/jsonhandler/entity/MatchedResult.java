@@ -1,4 +1,4 @@
-package com.nfcfriend.matcher.model;
+package com.nfcfriend.jsonhandler.entity;
 
 import java.util.ArrayList;
 import java.util.List;
