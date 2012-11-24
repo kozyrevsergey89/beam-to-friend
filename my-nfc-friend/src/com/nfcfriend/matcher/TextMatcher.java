@@ -20,7 +20,7 @@ public class TextMatcher implements Matcher<Map<String, MatchedResult<FacebookTe
 	}
 
 	/**
-	 * Finds all records from others matched with mine
+	 * Finds all records from yours matched with mine
      * returns
      * map: token -> result (list-mine, list-yours) with comments
 	 */
@@ -47,7 +47,7 @@ public class TextMatcher implements Matcher<Map<String, MatchedResult<FacebookTe
                 for(String both : tokensClone){
                     if(out.containsKey(both)){
 			            out.get(both).getMine().addAll(tokens.get(both));
-                        out.get(both).getOthers().add(item);
+                        out.get(both).getYours().add(item);
                     }
                 }
             }

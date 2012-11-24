@@ -1342,7 +1342,26 @@
       }
     ], 
  
-  }, 
+  },
+	"photos": {
+    "data": [
+      {
+        "id": "417360604985819", 
+        "created_time": "2012-10-15T06:49:26+0000", 
+        "tags": {
+          "data": [
+            {
+
+			  "id": "100000474643912"
+            }
+          ], 
+          "paging": {
+            "next": "https://graph.facebook.com/417360604985819/tags?fields=id&limit=5000&offset=5000&__after_id=100000474643912"
+          }
+        }
+      }
+	  ]
+	  },
     "paging": {
       "next": "https://graph.facebook.com/537225864/friends?limit=5000&offset=5000&__after_id=100003709980397"
     }
