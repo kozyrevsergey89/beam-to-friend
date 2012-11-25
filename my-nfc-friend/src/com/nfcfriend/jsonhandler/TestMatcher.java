@@ -14,13 +14,14 @@ import java.util.Map;
 
 public class TestMatcher {
 
+    @SuppressWarnings("unchecked")
 	public static void main(String[] args) throws IOException, JSONException {
 
 		JSONObject jsonMine = getJSON("D:\\max\\projects\\beam-to-friend\\my-nfc-friend\\test\\resources\\mine.txt.txt");
         JSONObject jsonYours = getJSON("D:\\max\\projects\\beam-to-friend\\my-nfc-friend\\test\\resources\\yours.txt.txt");
 		System.out.println("json object");
 		//System.out.println(jsonMine);
-		
+
 		FacebookJSONObject faceMine = new FacebookJSONObject(jsonMine);
         FacebookJSONObject faceYours = new FacebookJSONObject(jsonYours);
 		
