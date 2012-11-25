@@ -1364,6 +1364,552 @@
 	  },
     "paging": {
       "next": "https://graph.facebook.com/537225864/friends?limit=5000&offset=5000&__after_id=100003709980397"
+    },
+
+  "feed": {
+    "data": [
+      {
+        "id": "537225864_10151300181195865", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "message": "This is a fantastic night of coding on Dou Hack 2012. No-stop programming.", 
+        "actions": [
+          {
+            "name": "Comment", 
+            "link": "http://www.facebook.com/537225864/posts/10151300181195865"
+          }, 
+          {
+            "name": "Like", 
+            "link": "http://www.facebook.com/537225864/posts/10151300181195865"
+          }
+        ], 
+        "privacy": {
+          "description": "Public", 
+          "value": "EVERYONE"
+        }, 
+        "type": "status", 
+        "status_type": "mobile_status_update", 
+        "created_time": "2012-11-25T01:25:57+0000", 
+        "updated_time": "2012-11-25T01:25:57+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151299741295865", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "story": "Galushka Maxim added Soccer to his activities.", 
+        "story_tags": {
+          "0": [
+            {
+              "id": "537225864", 
+              "name": "Galushka Maxim", 
+              "offset": 0, 
+              "length": 14, 
+              "type": "user"
+            }
+          ], 
+          "21": [
+            {
+              "id": "102173226491776", 
+              "name": "Soccer", 
+              "offset": 21, 
+              "length": 6, 
+              "type": "page"
+            }
+          ]
+        }, 
+        "actions": [
+          {
+            "name": "Comment", 
+            "link": "http://www.facebook.com/537225864/posts/10151299741295865"
+          }, 
+          {
+            "name": "Like", 
+            "link": "http://www.facebook.com/537225864/posts/10151299741295865"
+          }
+        ], 
+        "type": "status", 
+        "created_time": "2012-11-24T18:54:22+0000", 
+        "updated_time": "2012-11-24T18:54:22+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151299733470865", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "story": "Galushka Maxim likes Soccer.", 
+        "story_tags": {
+          "0": [
+            {
+              "id": "537225864", 
+              "name": "Galushka Maxim", 
+              "offset": 0, 
+              "length": 14, 
+              "type": "user"
+            }
+          ], 
+          "21": [
+            {
+              "id": "102173226491776", 
+              "name": "Soccer", 
+              "offset": 21, 
+              "length": 6, 
+              "type": "page"
+            }
+          ]
+        }, 
+        "picture": "http://external.ak.fbcdn.net/safe_image.php?d=AQA-WC1znSHr4t_c&w=180&h=540&url=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb9%2FFootball_iu_1996.jpg&fallback=hub_likes&prefix=d", 
+        "link": "http://www.facebook.com/pages/Soccer/102173226491776?ref=stream", 
+        "name": "Soccer", 
+        "caption": "Sport", 
+        "description": "Association football, commonly known as football or soccer, is a sport played between two teams of eleven players with a...", 
+        "icon": "http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/xC785tTCIQO.gif", 
+        "type": "link", 
+        "application": {
+          "name": "Pages", 
+          "id": "2530096808"
+        }, 
+        "created_time": "2012-11-24T18:47:13+0000", 
+        "updated_time": "2012-11-24T18:47:13+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151280596375865", 
+        "from": {
+          "name": "Tatyana  Klichko", 
+          "id": "100002383961411"
+        }, 
+        "to": {
+          "data": [
+            {
+              "name": "Galushka Maxim", 
+              "id": "537225864"
+            }
+          ]
+        }, 
+        "picture": "http://platform.ak.fbcdn.net/www/app_full_proxy.php?app=252485551459331&v=1&size=z&cksum=21419c9c835414b839f32adb57504d24&src=http%3A%2F%2Fs.flistatic.com%2Fimages%2Fsocial%2Ftreats%2F2.jpg", 
+        "link": "http://apps.facebook.com/flirchi/?p=1020&pc=490&trid=2&sender_id=13617316&lid=47668165", 
+        "name": "Я хочу угостить тебя напитком!", 
+        "description": "Чтобы получить напиток, перейдите в приложение.", 
+        "icon": "http://photos-c.ak.fbcdn.net/photos-ak-snc7/v85006/179/158669727611903/app_101_158669727611903_794445743.png", 
+        "actions": [
+          {
+            "name": "Comment", 
+            "link": "http://www.facebook.com/537225864/posts/10151280596375865"
+          }, 
+          {
+            "name": "Like", 
+            "link": "http://www.facebook.com/537225864/posts/10151280596375865"
+          }, 
+          {
+            "name": "Получить напиток", 
+            "link": "http://apps.facebook.com/flirchi/?p=1020&pc=490&trid=2&sender_id=13617316&lid=47668165"
+          }
+        ], 
+        "type": "link", 
+        "status_type": "app_created_story", 
+        "application": {
+          "name": "Flirchi", 
+          "namespace": "flirchi", 
+          "id": "252485551459331"
+        }, 
+        "created_time": "2012-11-10T18:08:53+0000", 
+        "updated_time": "2012-11-10T18:08:53+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151276737570865", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "story": "Galushka Maxim and Natalia Galkina are now friends.", 
+        "story_tags": {
+          "0": [
+            {
+              "id": "537225864", 
+              "name": "Galushka Maxim", 
+              "offset": 0, 
+              "length": 14, 
+              "type": "user"
+            }
+          ], 
+          "19": [
+            {
+              "id": "1596610709", 
+              "name": "Natalia Galkina", 
+              "offset": 19, 
+              "length": 15, 
+              "type": "user"
+            }
+          ]
+        }, 
+        "type": "status", 
+        "status_type": "approved_friend", 
+        "created_time": "2012-11-07T20:05:23+0000", 
+        "updated_time": "2012-11-07T20:05:23+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151264006770865", 
+        "from": {
+          "name": "Tatyana  Klichko", 
+          "id": "100002383961411"
+        }, 
+        "to": {
+          "data": [
+            {
+              "name": "Galushka Maxim", 
+              "id": "537225864"
+            }
+          ]
+        }, 
+        "picture": "http://platform.ak.fbcdn.net/www/app_full_proxy.php?app=252485551459331&v=1&size=z&cksum=21419c9c835414b839f32adb57504d24&src=http%3A%2F%2Fs.flistatic.com%2Fimages%2Fsocial%2Ftreats%2F2.jpg", 
+        "link": "http://apps.facebook.com/flirchi/?p=1020&pc=490&trid=2&sender_id=13617316&lid=32888028", 
+        "name": "Я хочу угостить тебя напитком!", 
+        "description": "Чтобы получить напиток, перейдите в приложение.", 
+        "icon": "http://photos-c.ak.fbcdn.net/photos-ak-snc7/v85006/179/158669727611903/app_101_158669727611903_794445743.png", 
+        "actions": [
+          {
+            "name": "Comment", 
+            "link": "http://www.facebook.com/537225864/posts/10151264006770865"
+          }, 
+          {
+            "name": "Like", 
+            "link": "http://www.facebook.com/537225864/posts/10151264006770865"
+          }, 
+          {
+            "name": "Получить напиток", 
+            "link": "http://apps.facebook.com/flirchi/?p=1020&pc=490&trid=2&sender_id=13617316&lid=32888028"
+          }
+        ], 
+        "type": "link", 
+        "status_type": "app_created_story", 
+        "application": {
+          "name": "Flirchi", 
+          "namespace": "flirchi", 
+          "id": "252485551459331"
+        }, 
+        "created_time": "2012-10-30T14:01:26+0000", 
+        "updated_time": "2012-10-30T14:01:26+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151262069700865", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "story": "Galushka Maxim likes a photo.", 
+        "story_tags": {
+          "0": [
+            {
+              "id": "537225864", 
+              "name": "Galushka Maxim", 
+              "offset": 0, 
+              "length": 14, 
+              "type": "user"
+            }
+          ]
+        }, 
+        "type": "status", 
+        "application": {
+          "name": "Likes", 
+          "id": "2409997254"
+        }, 
+        "created_time": "2012-10-29T08:50:28+0000", 
+        "updated_time": "2012-10-29T08:50:28+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_485352244831813", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "story": "Galushka Maxim shared a link.", 
+        "story_tags": {
+          "0": [
+            {
+              "id": "537225864", 
+              "name": "Galushka Maxim", 
+              "offset": 0, 
+              "length": 14, 
+              "type": "user"
+            }
+          ]
+        }, 
+        "picture": "http://external.ak.fbcdn.net/safe_image.php?d=AQB3g3Sir1mUFd9D&w=90&h=90&url=http%3A%2F%2Fc.tadst.com%2Fgfx%2Fogm-cd-gen.png", 
+        "link": "http://www.timeanddate.com/countdown/generic?msg=DEADLINE%21%21%21&p0=179&year=2012&month=10&day=24&hour=17&min=0&sec=0", 
+        "name": "DEADLINE!!!", 
+        "caption": "www.timeanddate.com", 
+        "description": "Countdown to Oct 24, 2012 5:00 PM. Showing days, hours, minutes and seconds ticking down to 0", 
+        "icon": "http://static.ak.fbcdn.net/rsrc.php/v2/yD/r/aS8ecmYRys0.gif", 
+        "actions": [
+          {
+            "name": "Comment", 
+            "link": "http://www.facebook.com/537225864/posts/485352244831813"
+          }, 
+          {
+            "name": "Like", 
+            "link": "http://www.facebook.com/537225864/posts/485352244831813"
+          }
+        ], 
+        "privacy": {
+          "description": "Public", 
+          "value": "EVERYONE"
+        }, 
+        "type": "link", 
+        "status_type": "shared_story", 
+        "application": {
+          "name": "Share_bookmarklet", 
+          "id": "5085647995"
+        }, 
+        "created_time": "2012-10-24T16:36:37+0000", 
+        "updated_time": "2012-10-24T16:36:37+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151211806360865", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "story": "Galushka Maxim listened to Fade to Black on Myspace.", 
+        "story_tags": {
+          "0": [
+            {
+              "id": "537225864", 
+              "name": "Galushka Maxim", 
+              "offset": 0, 
+              "length": 14, 
+              "type": "user"
+            }
+          ], 
+          "27": [
+            {
+              "id": "10150102122328797", 
+              "name": "Fade to Black", 
+              "offset": 27, 
+              "length": 13
+            }
+          ], 
+          "44": [
+            {
+              "id": "109417482436806", 
+              "name": "Myspace", 
+              "offset": 44, 
+              "length": 7, 
+              "type": "application"
+            }
+          ]
+        }, 
+        "type": "link", 
+        "application": {
+          "name": "Myspace", 
+          "namespace": "myspace-app", 
+          "id": "109417482436806"
+        }, 
+        "created_time": "2012-09-23T05:29:12+0000", 
+        "updated_time": "2012-09-23T05:29:12+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151181950045865", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "story": "Galushka Maxim was tagged in Oleg Zavgorodny's photo.", 
+        "story_tags": {
+          "0": [
+            {
+              "id": "537225864", 
+              "name": "Galushka Maxim", 
+              "offset": 0, 
+              "length": 14, 
+              "type": "user"
+            }
+          ], 
+          "29": [
+            {
+              "id": "100001445401913", 
+              "name": "Oleg Zavgorodny", 
+              "offset": 29, 
+              "length": 15, 
+              "type": "user"
+            }
+          ]
+        }, 
+        "picture": "http://photos-f.ak.fbcdn.net/hphotos-ak-snc6/603420_420023368055840_224385225_s.jpg", 
+        "link": "http://www.facebook.com/photo.php?fbid=420023368055840&set=at.420023308055846.101362.100001445401913.537225864&type=1&relevant_count=1", 
+        "description": "Star #2", 
+        "icon": "http://static.ak.fbcdn.net/rsrc.php/v2/yz/r/StEh3RhPvjk.gif", 
+        "actions": [
+          {
+            "name": "Comment", 
+            "link": "http://www.facebook.com/537225864/posts/10151181950045865"
+          }, 
+          {
+            "name": "Like", 
+            "link": "http://www.facebook.com/537225864/posts/10151181950045865"
+          }
+        ], 
+        "type": "photo", 
+        "status_type": "tagged_in_photo", 
+        "object_id": "420023368055840", 
+        "application": {
+          "name": "Photos", 
+          "id": "2305272732"
+        }, 
+        "created_time": "2012-08-31T17:40:58+0000", 
+        "updated_time": "2012-08-31T17:40:58+0000", 
+        "likes": {
+          "data": [
+            {
+              "name": "Andrey Ovcharenko", 
+              "id": "100002107159925"
+            }
+          ], 
+          "count": 1
+        }, 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151156849540865", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "story": "Galushka Maxim and Геннадий Мамыга are now friends.", 
+        "story_tags": {
+          "0": [
+            {
+              "id": "537225864", 
+              "name": "Galushka Maxim", 
+              "offset": 0, 
+              "length": 14, 
+              "type": "user"
+            }
+          ], 
+          "19": [
+            {
+              "id": "100001748446414", 
+              "name": "Геннадий Мамыга", 
+              "offset": 19, 
+              "length": 15, 
+              "type": "user"
+            }
+          ]
+        }, 
+        "type": "status", 
+        "status_type": "approved_friend", 
+        "created_time": "2012-08-19T21:10:15+0000", 
+        "updated_time": "2012-08-19T21:10:15+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151134983270865", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "story": "Galushka Maxim and Elena Onanko are now friends.", 
+        "story_tags": {
+          "0": [
+            {
+              "id": "537225864", 
+              "name": "Galushka Maxim", 
+              "offset": 0, 
+              "length": 14, 
+              "type": "user"
+            }
+          ], 
+          "19": [
+            {
+              "id": "625542206", 
+              "name": "Elena Onanko", 
+              "offset": 19, 
+              "length": 12, 
+              "type": "user"
+            }
+          ]
+        }, 
+        "type": "status", 
+        "status_type": "approved_friend", 
+        "created_time": "2012-08-09T18:29:24+0000", 
+        "updated_time": "2012-08-09T18:29:24+0000", 
+        "comments": {
+          "count": 0
+        }
+      }, 
+      {
+        "id": "537225864_10151130860850865", 
+        "from": {
+          "name": "Galushka Maxim", 
+          "id": "537225864"
+        }, 
+        "story": "Galushka Maxim and Stanislav Skliarovskyi are now friends.", 
+        "story_tags": {
+          "0": [
+            {
+              "id": "537225864", 
+              "name": "Galushka Maxim", 
+              "offset": 0, 
+              "length": 14, 
+              "type": "user"
+            }
+          ], 
+          "19": [
+            {
+              "id": "100001617009910", 
+              "name": "Stanislav Skliarovskyi", 
+              "offset": 19, 
+              "length": 22, 
+              "type": "user"
+            }
+          ]
+        }, 
+        "type": "status", 
+        "status_type": "approved_friend", 
+        "created_time": "2012-08-07T20:43:59+0000", 
+        "updated_time": "2012-08-07T20:43:59+0000", 
+        "comments": {
+          "count": 0
+        }
+      }
+    ], 
+    "paging": {
+      "previous": "https://graph.facebook.com/537225864/feed?limit=25&since=1353806757", 
+      "next": "https://graph.facebook.com/537225864/feed?limit=25&until=1344372238"
     }
   }
 }

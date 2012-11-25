@@ -1850,14 +1850,14 @@
       {
         "id": "100000474643912_300932280006693", 
         "application": {
-          "name": "Iнтернет без меж", 
+          "name": "Iнтернет без меж - DOU!", 
           "id": "388681871203953"
         }, 
         "created_time": "2012-11-23T00:04:23+0000"
       }, 
       {
         "id": "100000474643912_549281281764355", 
-        "story": "Sergii Kozyrev likes Kyivstar.", 
+        "story": "Sergii Kozyrev likes Kyivstar. DOU - super!", 
         "application": {
           "name": "Pages", 
           "id": "2530096808"
