@@ -46,7 +46,7 @@ public class LoginActivity extends Activity{
 										   "friends_status","friends_videos","friends_website",
 										   "friends_work_history","read_insights", "read_mailbox", "read_requests", "read_stream",
                                             "xmpp_login", "ads_management", "create_event", "manage_friendlists", "manage_notifications",
-                                            "user_online_presence", "friends_online_presence", "publish_checkins", "publish_stream","rsvp_event"};
+                                            "user_online_presence", "friends_online_presence", "publish_checkins", "publish_stream","rsvp_event", "publish_actions"};
 
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
