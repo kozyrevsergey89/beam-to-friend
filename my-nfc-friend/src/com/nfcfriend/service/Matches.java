@@ -2,6 +2,8 @@ package com.nfcfriend.service;
 
 import com.nfcfriend.jsonhandler.entity.*;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -11,20 +13,20 @@ import java.util.Map;
  */
 public final class Matches {
 
-    private List<Friend> commonFriends;
-    private List<Like> commonLikes;
-    private List<Activity> commonActivities;
-    private List<Photo> commonPhotos;
+    private List<Friend> commonFriends = new ArrayList<Friend>();
+    private List<Like> commonLikes = new ArrayList<Like>();
+    private List<Activity> commonActivities = new ArrayList<Activity>();
+    private List<Photo> commonPhotos = new ArrayList<Photo>();
 
     // token -> list-mine, list-yours of posts containing same token
-    private Map<String, MatchedResult<Post>> matchedPosts;
+    private Map<String, MatchedResult<Post>> matchedPosts = new HashMap<String, MatchedResult<Post>>();
 
     // token -> list-mine, list-yours of feeds containing same token
-    private Map<String, MatchedResult<Feed>> matchedFeeds;
+    private Map<String, MatchedResult<Feed>> matchedFeeds = new HashMap<String, MatchedResult<Feed>>();
 
     // list-mine photos where I marked you
     // list-yours photos where you marked me
-    private MatchedResult<Photo> matchedPhotos;
+    private MatchedResult<Photo> matchedPhotos = new MatchedResult<Photo>();
 
     public List<Friend> getCommonFriends() {
         return commonFriends;
