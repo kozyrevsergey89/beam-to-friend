@@ -1,15 +1,16 @@
 package com.nfcfriend.matcher;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Pattern;
 
 public final class TokensMatcherUtil {
 
 	private Map<String, Pattern> patterns = new HashMap<String, Pattern>();
-	
+
+    public TokensMatcherUtil(){
+        this(Arrays.asList("Apple", "Kyivstar", "Samsung", "GE", "Amazon", "NTT Group", "Toyota", "Wells Fargo", "Bank of America", "McDonald's", "Shell", "Intel", "BMW", "Tesco", "Mersedes-Benz", "Mitsubishi", "Chase", "Ford", "Pepsi", "Oracle", "Nestle", "UPS", "Nike", "Adidas", "Walt Disney", "Nokia", "DOU", "Hackaton", "хакатон"));
+    }
+
 	public TokensMatcherUtil(List<String> tokens){
 
 		for(String token : tokens){

@@ -1,9 +1,7 @@
 package com.nfcfriend.jsonhandler;
 
 import com.nfcfriend.jsonhandler.entity.*;
-import com.nfcfriend.matcher.IdMatcher;
-import com.nfcfriend.matcher.Matcher;
-import com.nfcfriend.matcher.PhotoMatcher;
+import com.nfcfriend.matcher.*;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -34,18 +32,20 @@ public class TestMatcher {
         List<Like> matchedLikes = (List<Like>) matcher.findMatches(faceMine.getLikes(), faceYours.getLikes());
         System.out.println(matchedLikes);
 
+        List<Photo> samePhotos = (List<Photo>) matcher.findMatches(faceMine.getPhotos(), faceYours.getPhotos());
+        System.out.println(samePhotos);
+
         List<Activity> matchedActivities = (List<Activity>) matcher.findMatches(faceMine.getActivities(), faceYours.getActivities());
         System.out.println(matchedActivities);
-		//System.out.println("likes");
-		//System.out.println(facebookJSONObject.getLikes());
-		//System.out.println("posts");
-		//System.out.println(facebookJSONObject.getPosts());
-		//System.out.println("feed");
-		//System.out.println(facebookJSONObject.getFeeds());
-		//System.out.println("activities");
-		//System.out.println(facebookJSONObject.getActivities());
-		//System.out.println("photos");
-		//System.out.println(facebookJSONObject.getPhotos());
+
+        Matcher textMatcher = new TextMatcher();
+        ((TextMatcher)textMatcher).setMatcherUtil(new TokensMatcherUtil());
+        Object matchedPosts = textMatcher.findMatches(faceMine.getPosts(), faceYours.getPosts());
+        System.out.println(matchedPosts);
+
+        Object matchedFeeds = textMatcher.findMatches(faceMine.getFeeds(), faceYours.getFeeds());
+        System.out.println(matchedFeeds);
+
 
         PhotoMatcher photoMatcher = new PhotoMatcher();
         MatchedResult<Photo> matchedPhotos = photoMatcher.findMatches(faceMine.getPhotos(), faceYours.getPhotos());

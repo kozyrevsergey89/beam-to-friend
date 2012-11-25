@@ -23,10 +23,12 @@ public class Post implements FacebookIdentifiable, FacebookStory{
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	
+
     @Override
 	public String getStory() {
-		return story;
+        if(this.message != null && !"".equals(this.message.trim())) return this.message;
+        if(this.story != null && !"".equals(this.story.trim())) return this.story;
+		return "";
 	}
 
 	public void setStory(String story) {

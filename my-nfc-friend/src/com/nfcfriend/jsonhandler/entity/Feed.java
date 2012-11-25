@@ -3,6 +3,7 @@ package com.nfcfriend.jsonhandler.entity;
 public class Feed implements FacebookIdentifiable, FacebookStory{
 
 	private String id;
+    private String message;
     private String story;
     private Application application;
     
@@ -14,9 +15,19 @@ public class Feed implements FacebookIdentifiable, FacebookStory{
 		this.id = id;
 	}
 
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
     @Override
 	public String getStory() {
-		return story;
+        if(this.message != null && !"".equals(this.message.trim())) return this.message;
+        if(this.story != null && !"".equals(this.story.trim())) return this.story;
+        return "";
 	}
 	public void setStory(String story) {
 		this.story = story;
@@ -30,7 +41,7 @@ public class Feed implements FacebookIdentifiable, FacebookStory{
   	
 	@Override
 	public String toString() {
-		return "Feed [id=" + id + ", story=" + story + ", application="
+		return "Feed [id=" + id + ", story=" + story + ", message=" + message + ", application="
 				+ application + "]";
 	}
 	
