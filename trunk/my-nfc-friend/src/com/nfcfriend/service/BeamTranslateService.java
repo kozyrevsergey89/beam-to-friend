@@ -16,6 +16,7 @@ import android.util.Log;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 public class BeamTranslateService extends Service {
 	
@@ -55,6 +56,24 @@ public class BeamTranslateService extends Service {
 		@Override
 		protected FacebookJSONObject doInBackground(String... params) {
 			return parseToModel(params[0]);
+		}
+	}
+	
+	public Matches getMatches(final FacebookJSONObject me, final FacebookJSONObject friend) {
+		try {
+			return new MatchTask().execute(me, friend).get();
+		} catch (InterruptedException e) {
+			Log.e("ERROR", "InterruptedException");
+		} catch (ExecutionException e) {
+			Log.e("ERROR", "ExecutionException");
+		}
+		return null;
+	}
+	
+	private class MatchTask extends AsyncTask<FacebookJSONObject, Void, Matches> {
+		@Override
+		protected Matches doInBackground(FacebookJSONObject... params) {
+			return findMatches(params[0], params[1]);
 		}
 	}
 

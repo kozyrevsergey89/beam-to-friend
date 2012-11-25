@@ -1,5 +1,8 @@
 package com.nfcfriend;
 
+import com.nfcfriend.jsonhandler.FacebookJSONObject;
+import com.nfcfriend.service.Matches;
+
 import android.net.Uri;
 import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
@@ -60,7 +63,15 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
 	private void processIntent(final Intent intent) {
 		Parcelable[] rawMessage = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES);
 		NdefMessage msg = (NdefMessage) rawMessage[0];
-		Log.i("NFCFriend", new String(msg.getRecords()[0].getPayload()));
+		FacebookJSONObject friendObject = null;
+		if (beamService != null && new String(msg.getRecords()[0].getPayload()) != null) {
+			Log.i("NFCFriend", "MainActivity - " + new String(msg.getRecords()[0].getPayload()));
+			friendObject = beamService.parseWithAsyncTask(new String(msg.getRecords()[0].getPayload()));
+		}
+		if (friendObject != null) {
+			Log.i("NFCFriend", "MainActivity - " + friendObject.getId());
+			showFunctionallityDialog(friendObject);
+		}
 	}
 	
 	@Override
@@ -77,7 +88,7 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
 	}
 	
 	
-	private void showFunctionallityDialog(final int id) {
+	private void showFunctionallityDialog(final FacebookJSONObject object) {
 		 new AlertDialog.Builder(this)
          .setTitle("Topics or Friend Request?")
          .setMessage("TOPICS will show shared topics for conversation. REQUEST will proceed You to make friend request.")
@@ -85,16 +96,17 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
                  new DialogInterface.OnClickListener() {
                      @Override
                      public void onClick(final DialogInterface dialog, final int which) {
-                    	 //run service matching
+                    	 if(beamService != null) {
+                    		Matches matches = beamService.getMatches(result, object);
+                    		Log.i("NFCFriend","MainActivity - " + matches.getCommonFriends().get(0).getName());
+                    	 }
                      }
-
                  })
          .setNegativeButton("REQUEST",
                  new DialogInterface.OnClickListener() {
                      @Override
                      public void onClick(final DialogInterface dialog, final int which) {
-                    	//ENTER PERSONS ID
-                     	String url = "http://www.facebook.com/addfriend.php?id="+ id;
+                     	String url = "http://www.facebook.com/addfriend.php?id="+ object.getId();
                      	Intent i = new Intent(Intent.ACTION_VIEW);
                      	i.setData(Uri.parse(url));
                      	startActivity(i);

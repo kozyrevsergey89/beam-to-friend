@@ -13,6 +13,7 @@ import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
+import android.util.Log;
 
 public class ResultActivity extends Activity{
 
@@ -44,6 +45,8 @@ public class ResultActivity extends Activity{
 					if(response.hasExtra(GetMyInfoService.RESULT)) {
 						responseString = response.getStringExtra(GetMyInfoService.RESULT);
 						result = beamService.parseWithAsyncTask(response.getStringExtra(GetMyInfoService.RESULT));
+						Log.i("NFCFriend", "ResultActivity - " + result.getId());
+						Log.i("NFCFriend", "ResultActivity - " + responseString);
 					}
 				}
 			}
