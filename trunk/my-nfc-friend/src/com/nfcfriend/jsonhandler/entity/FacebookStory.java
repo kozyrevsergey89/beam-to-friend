@@ -1,4 +1,4 @@
-package com.nfcfriend.matcher.model;
+package com.nfcfriend.jsonhandler.entity;
 
 public interface FacebookStory {
 	
