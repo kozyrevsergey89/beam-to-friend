@@ -33,6 +33,9 @@ public class TestMatcher {
 
         List<Like> matchedLikes = (List<Like>) matcher.findMatches(faceMine.getLikes(), faceYours.getLikes());
         System.out.println(matchedLikes);
+
+        List<Activity> matchedActivities = (List<Activity>) matcher.findMatches(faceMine.getActivities(), faceYours.getActivities());
+        System.out.println(matchedActivities);
 		//System.out.println("likes");
 		//System.out.println(facebookJSONObject.getLikes());
 		//System.out.println("posts");
