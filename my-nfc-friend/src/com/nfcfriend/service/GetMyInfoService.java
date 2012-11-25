@@ -44,12 +44,12 @@ public class GetMyInfoService extends IntentService{
 
 		@Override
 		public void onComplete(final String response, final Object state) {
-			startActivityWithResiult(response);
+			startActivityWithResult(response);
 		}
 		
 	}
 	
-	private void startActivityWithResiult(final String result) {
+	private void startActivityWithResult(final String result) {
 		Intent main = new Intent(this, MainActivity.class);
 		main.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		main.putExtra(RESULT, result);

@@ -1,6 +1,6 @@
 package com.nfcfriend;
 
-
+import android.net.Uri;
 import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
@@ -11,7 +11,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Parcelable;
 import android.util.Log;
-import android.widget.Toast;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 
 public class MainActivity extends ResultActivity implements CreateNdefMessageCallback, OnNdefPushCompleteCallback {
@@ -37,7 +38,7 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
 		public void handleMessage(final Message msg) {
 			switch (msg.what) {
 			case MESSAGE_SENT:
-				Toast.makeText(getApplicationContext(), "Message sent!", Toast.LENGTH_SHORT).show();
+				Log.i("NFCFriend", "Message sent !");
 				break;
 			default:
 				break;
@@ -47,7 +48,7 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
 	
 	@Override
 	public NdefMessage createNdefMessage(final NfcEvent event) {
-		ndefMessage = new NdefMessage(NdefRecord.createMime("application/com.nfcfriend", "David phone".getBytes()));
+		ndefMessage = new NdefMessage(NdefRecord.createMime("application/com.nfcfriend", responseString.getBytes()));
 		return ndefMessage;
 	}
 
@@ -73,5 +74,37 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
 	@Override
 	protected void onNewIntent(final Intent intent) {
 		setIntent(intent);
+	}
+	
+	
+	private void showFunctionallityDialog(final int id) {
+		 new AlertDialog.Builder(this)
+         .setTitle("Topics or Friend Request?")
+         .setMessage("TOPICS will show shared topics for conversation. REQUEST will proceed You to make friend request.")
+         .setPositiveButton("TOPICS",
+                 new DialogInterface.OnClickListener() {
+                     @Override
+                     public void onClick(final DialogInterface dialog, final int which) {
+                    	 //run service matching
+                     }
+
+                 })
+         .setNegativeButton("REQUEST",
+                 new DialogInterface.OnClickListener() {
+                     @Override
+                     public void onClick(final DialogInterface dialog, final int which) {
+                    	//ENTER PERSONS ID
+                     	String url = "http://www.facebook.com/addfriend.php?id="+ id;
+                     	Intent i = new Intent(Intent.ACTION_VIEW);
+                     	i.setData(Uri.parse(url));
+                     	startActivity(i);
+                     }
+
+                 }).setOnCancelListener(new DialogInterface.OnCancelListener() {
+             @Override
+             public void onCancel(DialogInterface d) {
+                 d.dismiss();
+             }
+         }).show();
 	}
 }

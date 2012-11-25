@@ -1,5 +1,6 @@
 package com.nfcfriend;
 
+import com.nfcfriend.jsonhandler.FacebookJSONObject;
 import com.nfcfriend.service.BeamTranslateService;
 import com.nfcfriend.service.BeamTranslateService.NfcBinder;
 import com.nfcfriend.service.GetMyInfoService;
@@ -10,12 +11,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.IBinder;
 
 public class ResultActivity extends Activity{
-	
-	protected BeamTranslateService service;
+
+	protected BeamTranslateService beamService;
 	protected boolean bound = false;
+	protected FacebookJSONObject result;
+	protected String responseString;
 	
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
@@ -28,15 +32,24 @@ public class ResultActivity extends Activity{
 		super.onStart();
 		Intent intent = new Intent(this, BeamTranslateService.class);
 		bindService(intent, connection, Context.BIND_AUTO_CREATE);
-		if(service != null) {
+		new Handler().postDelayed(serviceWaiter, 500);
+	}
+	
+	final Runnable serviceWaiter = new Runnable() {
+		@Override
+		public void run() {
 			Intent response = getIntent();
-			if (response != null && response.getExtras() != null) {
-				if(response.hasExtra(GetMyInfoService.RESULT)) {
-					service.parseWithAsyncTask(response.getStringExtra(GetMyInfoService.RESULT));
+			if (beamService != null) {
+				if (response != null && response.getExtras() != null) {
+					if(response.hasExtra(GetMyInfoService.RESULT)) {
+						responseString = response.getStringExtra(GetMyInfoService.RESULT);
+						result = beamService.parseWithAsyncTask(response.getStringExtra(GetMyInfoService.RESULT));
+					}
 				}
 			}
+
 		}
-	}
+	};
 	
 	@Override
 	protected void onStop() {
@@ -47,7 +60,7 @@ public class ResultActivity extends Activity{
 		}
 	}
 	
-	private ServiceConnection connection = new ServiceConnection() {
+	final ServiceConnection connection = new ServiceConnection() {
 		
 		@Override
 		public void onServiceDisconnected(final ComponentName name) {
@@ -57,7 +70,7 @@ public class ResultActivity extends Activity{
 		@Override
 		public void onServiceConnected(final ComponentName name, final IBinder service) {
 			NfcBinder binder = (NfcBinder) service;
-			ResultActivity.this.service = binder.getService();
+			beamService = binder.getService();
 			bound = true;
 		}
 	};

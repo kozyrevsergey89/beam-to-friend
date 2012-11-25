@@ -13,7 +13,7 @@ import android.os.IBinder;
 import android.util.Log;
 
 public class BeamTranslateService extends Service {
-
+	
 	private final IBinder binder = new NfcBinder();
 
 	@Override
@@ -27,18 +27,15 @@ public class BeamTranslateService extends Service {
 		}
 	}
 
-	public void parseWithAsyncTask(final String response) {
-		new ParseTask().execute(response);
-	}
-
-	private class ParseTask extends AsyncTask<String, Void, Void> {
-		@Override
-		protected Void doInBackground(String... params) {
-			parseToModel(params[0]);
+	public FacebookJSONObject parseWithAsyncTask(final String response) {
+		try {
+			return new ParseTask().execute(response).get();
+		} catch (Exception e) {
+			Log.e("ERROR", "Unable to get facebook object");
 			return null;
 		}
 	}
-
+	
 	public FacebookJSONObject parseToModel(final String response) {
 		JSONObject json = new JSONObject();
 		try {
@@ -48,5 +45,19 @@ public class BeamTranslateService extends Service {
 		}
 		return new FacebookJSONObject(json);
 	}
+
+	private class ParseTask extends AsyncTask<String, Void, FacebookJSONObject> {
+		@Override
+		protected FacebookJSONObject doInBackground(String... params) {
+			return parseToModel(params[0]);
+		}
+	}
+
+	private void findMatches(final FacebookJSONObject jsonObject) {
+		//match method
+	}
+	
+	
+	
 
 }
