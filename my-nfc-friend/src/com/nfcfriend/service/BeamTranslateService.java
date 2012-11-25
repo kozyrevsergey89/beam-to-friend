@@ -70,10 +70,10 @@ public class BeamTranslateService extends Service {
 
         Matcher textMatcher = new TextMatcher();
         ((TextMatcher)textMatcher).setMatcherUtil(new TokensMatcherUtil());
-        matches.setMatchedPosts((Map<String, MatchedResult<FacebookStory>>)
+        matches.setMatchedPosts((Map<String, MatchedResult<Post>>)
                                         textMatcher.findMatches(mineJson.getPosts(), yourJson.getPosts()));
 
-        matches.setMatchedFeeds ((Map<String, MatchedResult<FacebookStory>>)
+        matches.setMatchedFeeds ((Map<String, MatchedResult<Feed>>)
                                         textMatcher.findMatches(mineJson.getFeeds(), yourJson.getFeeds()));
 
 

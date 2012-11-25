@@ -17,10 +17,10 @@ public final class Matches {
     private List<Photo> commonPhotos;
 
     // token -> list-mine, list-yours of posts containing same token
-    private Map<String, MatchedResult<FacebookStory>> matchedPosts;
+    private Map<String, MatchedResult<Post>> matchedPosts;
 
     // token -> list-mine, list-yours of feeds containing same token
-    private Map<String, MatchedResult<FacebookStory>> matchedFeeds;
+    private Map<String, MatchedResult<Feed>> matchedFeeds;
 
     // list-mine photos where I marked you
     // list-yours photos where you marked me
@@ -58,19 +58,19 @@ public final class Matches {
         this.commonPhotos = commonPhotos;
     }
 
-    public Map<String, MatchedResult<FacebookStory>> getMatchedPosts() {
+    public Map<String, MatchedResult<Post>> getMatchedPosts() {
         return matchedPosts;
     }
 
-    public void setMatchedPosts(Map<String, MatchedResult<FacebookStory>> matchedPosts) {
+    public void setMatchedPosts(Map<String, MatchedResult<Post>> matchedPosts) {
         this.matchedPosts = matchedPosts;
     }
 
-    public Map<String, MatchedResult<FacebookStory>> getMatchedFeeds() {
+    public Map<String, MatchedResult<Feed>> getMatchedFeeds() {
         return matchedFeeds;
     }
 
-    public void setMatchedFeeds(Map<String, MatchedResult<FacebookStory>> matchedFeeds) {
+    public void setMatchedFeeds(Map<String, MatchedResult<Feed>> matchedFeeds) {
         this.matchedFeeds = matchedFeeds;
     }
 
