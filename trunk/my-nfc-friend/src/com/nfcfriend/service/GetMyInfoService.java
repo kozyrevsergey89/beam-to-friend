@@ -31,9 +31,7 @@ public class GetMyInfoService extends IntentService{
 			facebook = ((NfcApp)getApplication()).getFacebook();
 			runner = new AsyncFacebookRunner(facebook);
 			Bundle bundle = new Bundle();
-			bundle.putString("fields", "friends.fields(id,name),likes.fields(id,name)," +
-					"activities,photos.fields(id,comments.fields(id))," +
-					"posts.fields(id,story,message)");
+			bundle.putString("fields", "friends.fields(id,name),likes.fields(id,name),activities");
 
             //,feed.fields(id,story,message)
 
