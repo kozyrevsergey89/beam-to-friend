@@ -1,6 +1,10 @@
 package com.nfcfriend;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.nfcfriend.jsonhandler.FacebookJSONObject;
+import com.nfcfriend.jsonhandler.entity.Friend;
 import com.nfcfriend.service.BeamTranslateService;
 import com.nfcfriend.service.Matches;
 
@@ -11,11 +15,14 @@ import android.nfc.NfcAdapter;
 import android.nfc.NfcAdapter.CreateNdefMessageCallback;
 import android.nfc.NfcAdapter.OnNdefPushCompleteCallback;
 import android.nfc.NfcEvent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Parcelable;
 import android.util.Log;
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ListActivity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -24,6 +31,7 @@ import android.content.SharedPreferences;
 public class MainActivity extends ResultActivity implements CreateNdefMessageCallback, OnNdefPushCompleteCallback {
 
 	public static final int MESSAGE_SENT = 1;
+	public static final String FRIENDS = "friends";
 	private NfcAdapter nfcAdapter;
 	private NdefMessage ndefMessage;
 	private FacebookJSONObject friendObject = null;
@@ -86,7 +94,7 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
 				}
 			}, 500);
 		}
-		showFunctionallityDialog(friendObject);
+		showFunctionallityDialog(friendObject, this);
 	}
 	
 	@Override
@@ -103,7 +111,7 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
 	}
 	
 	
-	private void showFunctionallityDialog(final FacebookJSONObject object) {
+	private void showFunctionallityDialog(final FacebookJSONObject object, final Activity activity) {
 		 new AlertDialog.Builder(this)
          .setTitle("Topics or Friend Request?")
          .setMessage("TOPICS will show shared topics for conversation. REQUEST will proceed You to make friend request.")
@@ -119,10 +127,21 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
                     		Log.i("NFCFriend", result.getId() + " - my id");
                     		Log.i("NFCFriend", friendObject.getId() + " - friends id");
                     		Matches matches = beamService.findMatches(result, friendObject);
+                    		/*
                     		Log.i("NFCFriend","MainActivity - " + matches.getCommonFriends().size());
                     		Log.i("NFCFriend","MainActivity - " + matches.getCommonActivities().size());
                     		Log.i("NFCFriend","MainActivity - " + matches.getCommonLikes().size());
                     		Log.i("NFCFriend","MainActivity - " + matches.getMatchedFeeds().size());
+                    		*/
+                    		ArrayList<String> names = new ArrayList<String>();
+                    		for (Friend friend : matches.getCommonFriends()) {
+                    			names.add(friend.getName());
+                    		}
+                    		
+                    		Intent intent = new Intent(activity, FriendListActivity.class);
+                    		intent.putStringArrayListExtra(FRIENDS, names);
+                    		startActivity(intent);
+                    		
                     	 } else {
                     		Log.i("NFCFriend", "showFunctionallityDialog beam is null"); 
                     	 }
