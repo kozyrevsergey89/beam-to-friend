@@ -14,9 +14,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.util.Log;
+import android.view.Window;
 
 public class ResultActivity extends Activity{
 
+	public static final String RES = "MY_RESULT"; 
 	protected BeamTranslateService beamService;
 	protected boolean bound = false;
 	protected FacebookJSONObject result;
@@ -25,6 +27,7 @@ public class ResultActivity extends Activity{
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 	}
 	
@@ -44,7 +47,8 @@ public class ResultActivity extends Activity{
 				if (response != null && response.getExtras() != null) {
 					if(response.hasExtra(GetMyInfoService.RESULT)) {
 						responseString = response.getStringExtra(GetMyInfoService.RESULT);
-						result = beamService.parseWithAsyncTask(response.getStringExtra(GetMyInfoService.RESULT));
+						//result = beamService.parseWithAsyncTask(response.getStringExtra(GetMyInfoService.RESULT));
+						result = beamService.parseToModel(responseString);
 						Log.i("NFCFriend", "ResultActivity - " + result.getId());
 						Log.i("NFCFriend", "ResultActivity - " + responseString);
 					}
@@ -63,7 +67,7 @@ public class ResultActivity extends Activity{
 		}
 	}
 	
-	final ServiceConnection connection = new ServiceConnection() {
+	public final ServiceConnection connection = new ServiceConnection() {
 		
 		@Override
 		public void onServiceDisconnected(final ComponentName name) {

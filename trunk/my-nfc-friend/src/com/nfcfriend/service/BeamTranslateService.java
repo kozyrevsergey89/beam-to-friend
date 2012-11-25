@@ -78,7 +78,7 @@ public class BeamTranslateService extends Service {
 	}
 
     @SuppressWarnings("unchecked")
-	private Matches findMatches(final FacebookJSONObject mineJson, final FacebookJSONObject yourJson) {
+	public Matches findMatches(final FacebookJSONObject mineJson, final FacebookJSONObject yourJson) {
 		Matches matches = new Matches();
 
         Matcher matcher = new IdMatcher();
@@ -94,7 +94,6 @@ public class BeamTranslateService extends Service {
 
         matches.setMatchedFeeds ((Map<String, MatchedResult<Feed>>)
                                         textMatcher.findMatches(mineJson.getFeeds(), yourJson.getFeeds()));
-
 
         PhotoMatcher photoMatcher = new PhotoMatcher();
         matches.setMatchedPhotos(photoMatcher.findMatches(mineJson.getPhotos(), yourJson.getPhotos()));
