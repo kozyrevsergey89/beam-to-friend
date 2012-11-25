@@ -26,9 +26,13 @@ public class PhotoMatcher implements Matcher<MatchedResult<Photo>, Photo> {
     public MatchedResult<Photo> findMatches(List<Photo> mine, List<Photo> yours) {
 
         MatchedResult<Photo> out = new MatchedResult<Photo>();
+        if(mine == null || mine.size() == 0) return out;
+        if(yours == null || yours.size() == 0) return out;
 
         String myId = mine.get(0).getAuthorId();
         String yourId = yours.get(0).getAuthorId();
+
+        if(myId == null || "".equals(myId.trim()) || yourId == null || "".equals(yourId.trim())) return out;
 
         fillOut(out.getMine(), mine, yourId);
         fillOut(out.getYours(), yours, myId);
