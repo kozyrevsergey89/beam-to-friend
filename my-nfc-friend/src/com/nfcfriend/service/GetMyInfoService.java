@@ -32,7 +32,7 @@ public class GetMyInfoService extends IntentService{
 			runner = new AsyncFacebookRunner(facebook);
 			Bundle bundle = new Bundle();
 			bundle.putString("fields", "friends.fields(id,name),likes.fields(id,name)," +
-					"activities,photos.fields(id,comments.fields(id)," +
+					"activities,photos.fields(id,comments.fields(id))," +
 					"posts.fields(id,story,type,via,object_id),feed.fields(id,story,via,application,object_id)");
 
 		runner.request("me",bundle, new TopicRequestListener());	
