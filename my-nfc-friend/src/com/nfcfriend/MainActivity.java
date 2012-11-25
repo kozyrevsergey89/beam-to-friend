@@ -1,6 +1,7 @@
 package com.nfcfriend;
 
 import com.nfcfriend.jsonhandler.FacebookJSONObject;
+import com.nfcfriend.service.BeamTranslateService;
 import com.nfcfriend.service.Matches;
 
 import android.net.Uri;
@@ -15,14 +16,18 @@ import android.os.Message;
 import android.os.Parcelable;
 import android.util.Log;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 
 public class MainActivity extends ResultActivity implements CreateNdefMessageCallback, OnNdefPushCompleteCallback {
 
 	public static final int MESSAGE_SENT = 1;
 	private NfcAdapter nfcAdapter;
 	private NdefMessage ndefMessage;
+	private FacebookJSONObject friendObject = null;
+	private String nativeUser;
 	
 	@Override
 	protected void onStart() {
@@ -63,15 +68,25 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
 	private void processIntent(final Intent intent) {
 		Parcelable[] rawMessage = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES);
 		NdefMessage msg = (NdefMessage) rawMessage[0];
-		FacebookJSONObject friendObject = null;
-		if (beamService != null && new String(msg.getRecords()[0].getPayload()) != null) {
-			Log.i("NFCFriend", "MainActivity - " + new String(msg.getRecords()[0].getPayload()));
-			friendObject = beamService.parseWithAsyncTask(new String(msg.getRecords()[0].getPayload()));
+		nativeUser = new String(msg.getRecords()[0].getPayload());
+		Log.i("NFCFriend", "MainActivity - " + nativeUser);
+		if (beamService != null && nativeUser != null) {
+			Log.i("NFCFriend","beam is not null");
+			//friendObject = beamService.parseWithAsyncTask(nativeUser);
+			friendObject = beamService.parseToModel(nativeUser);
+		} else {
+			Log.i("NFCFriend","beam is null");
+			Intent binder = new Intent(this, BeamTranslateService.class);
+			bindService(binder, connection, Context.BIND_AUTO_CREATE);
+			new Handler().postDelayed(new Runnable() {
+				@Override
+				public void run() {
+					friendObject = beamService.parseToModel(nativeUser);
+					Log.i("NFCFriend", friendObject != null ? friendObject.getId() + "" : "friend object is null");
+				}
+			}, 500);
 		}
-		if (friendObject != null) {
-			Log.i("NFCFriend", "MainActivity - " + friendObject.getId());
-			showFunctionallityDialog(friendObject);
-		}
+		showFunctionallityDialog(friendObject);
 	}
 	
 	@Override
@@ -97,8 +112,19 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
                      @Override
                      public void onClick(final DialogInterface dialog, final int which) {
                     	 if(beamService != null) {
-                    		Matches matches = beamService.getMatches(result, object);
-                    		Log.i("NFCFriend","MainActivity - " + matches.getCommonFriends().get(0).getName());
+                    		SharedPreferences prefs = getSharedPreferences(LoginActivity.PREFS_NAME, MODE_PRIVATE);
+                    		responseString = prefs.getString(ResultActivity.RES, null);
+                    		result = beamService.parseToModel(responseString);
+                    		friendObject = beamService.parseToModel(nativeUser);
+                    		Log.i("NFCFriend", result.getId() + " - my id");
+                    		Log.i("NFCFriend", friendObject.getId() + " - friends id");
+                    		Matches matches = beamService.findMatches(result, friendObject);
+                    		Log.i("NFCFriend","MainActivity - " + matches.getCommonFriends().size());
+                    		Log.i("NFCFriend","MainActivity - " + matches.getCommonActivities().size());
+                    		Log.i("NFCFriend","MainActivity - " + matches.getCommonLikes().size());
+                    		Log.i("NFCFriend","MainActivity - " + matches.getMatchedFeeds().size());
+                    	 } else {
+                    		Log.i("NFCFriend", "showFunctionallityDialog beam is null"); 
                     	 }
                      }
                  })
@@ -106,7 +132,7 @@ public class MainActivity extends ResultActivity implements CreateNdefMessageCal
                  new DialogInterface.OnClickListener() {
                      @Override
                      public void onClick(final DialogInterface dialog, final int which) {
-                     	String url = "http://www.facebook.com/addfriend.php?id="+ object.getId();
+                     	String url = "http://www.facebook.com/addfriend.php?id="+ friendObject.getId();
                      	Intent i = new Intent(Intent.ACTION_VIEW);
                      	i.setData(Uri.parse(url));
                      	startActivity(i);
