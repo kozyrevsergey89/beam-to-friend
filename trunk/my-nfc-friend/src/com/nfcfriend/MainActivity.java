@@ -7,25 +7,22 @@ import android.nfc.NfcAdapter;
 import android.nfc.NfcAdapter.CreateNdefMessageCallback;
 import android.nfc.NfcAdapter.OnNdefPushCompleteCallback;
 import android.nfc.NfcEvent;
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Parcelable;
 import android.util.Log;
 import android.widget.Toast;
-import android.app.Activity;
 import android.content.Intent;
 
-public class MainActivity extends Activity implements CreateNdefMessageCallback, OnNdefPushCompleteCallback {
+public class MainActivity extends ResultActivity implements CreateNdefMessageCallback, OnNdefPushCompleteCallback {
 
 	public static final int MESSAGE_SENT = 1;
 	private NfcAdapter nfcAdapter;
 	private NdefMessage ndefMessage;
 	
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+	protected void onStart() {
+		super.onStart();
 		nfcAdapter = NfcAdapter.getDefaultAdapter(this);
 		if(nfcAdapter == null) {
 			Log.e("ERROR", "NFC is not available");
@@ -33,6 +30,7 @@ public class MainActivity extends Activity implements CreateNdefMessageCallback,
 			nfcAdapter.setNdefPushMessageCallback(this, this);
 			nfcAdapter.setOnNdefPushCompleteCallback(this, this);
 		}
+
 	}
 
 	private Handler nfcHandler = new Handler() {
