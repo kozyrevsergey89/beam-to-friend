@@ -2,7 +2,7 @@ package com.nfcfriend.matcher;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
-import com.nfcfriend.matcher.model.FacebookTextable;
+import com.nfcfriend.matcher.model.FacebookStory;
 import com.nfcfriend.jsonhandler.entity.MatchedResult;
 
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-public class TextMatcher implements Matcher<Map<String, MatchedResult<FacebookTextable>>, FacebookTextable>{
+public class TextMatcher implements Matcher<Map<String, MatchedResult<FacebookStory>>, FacebookStory>{
 	
 	private TokensMatcherUtil matcherUtil;
 
@@ -25,22 +25,25 @@ public class TextMatcher implements Matcher<Map<String, MatchedResult<FacebookTe
      * map: token -> result (list-mine, list-yours) with comments
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public Map<String, MatchedResult<FacebookTextable>> findMatches(
-			List<FacebookTextable> mine,
-			List<FacebookTextable> yours){
+	public Map<String, MatchedResult<FacebookStory>> findMatches(
+			List<FacebookStory> mine,
+			List<FacebookStory> yours){
 
-        ConcurrentMap<String, MatchedResult<FacebookTextable>> out =
-                                        new ConcurrentHashMap<String, MatchedResult<FacebookTextable>>();
+        if(matcherUtil == null)
+            throw new RuntimeException("TextMatcher is not prepared, configure it using setMatcherUtil method");
 
-		Multimap<String, FacebookTextable> tokens = ArrayListMultimap.create();
-		for(FacebookTextable item : mine){
-            for(String token : matcherUtil.getAssociatedTokens(item.getText())){
+        ConcurrentMap<String, MatchedResult<FacebookStory>> out =
+                                        new ConcurrentHashMap<String, MatchedResult<FacebookStory>>();
+
+		Multimap<String, FacebookStory> tokens = ArrayListMultimap.create();
+		for(FacebookStory item : mine){
+            for(String token : matcherUtil.getAssociatedTokens(item.getStory())){
 			    tokens.put(token, item);
             }
 		}
 
-		for(FacebookTextable item : yours){
-			List<String> othersTokens = matcherUtil.getAssociatedTokens(item.getText());
+		for(FacebookStory item : yours){
+			List<String> othersTokens = matcherUtil.getAssociatedTokens(item.getStory());
 			List<String> tokensClone = new ArrayList(tokens.keySet());
 			tokensClone.retainAll(othersTokens);
             if(tokensClone.size() > 0){
