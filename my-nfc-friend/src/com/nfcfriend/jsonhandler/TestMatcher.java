@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 public class TestMatcher {
 
@@ -40,10 +41,12 @@ public class TestMatcher {
 
         Matcher textMatcher = new TextMatcher();
         ((TextMatcher)textMatcher).setMatcherUtil(new TokensMatcherUtil());
-        Object matchedPosts = textMatcher.findMatches(faceMine.getPosts(), faceYours.getPosts());
+        Map<String, MatchedResult<FacebookStory>> matchedPosts = (Map<String, MatchedResult<FacebookStory>>)
+                                                        textMatcher.findMatches(faceMine.getPosts(), faceYours.getPosts());
         System.out.println(matchedPosts);
 
-        Object matchedFeeds = textMatcher.findMatches(faceMine.getFeeds(), faceYours.getFeeds());
+        Map<String, MatchedResult<FacebookStory>> matchedFeeds = (Map<String, MatchedResult<FacebookStory>>)
+                                                        textMatcher.findMatches(faceMine.getFeeds(), faceYours.getFeeds());
         System.out.println(matchedFeeds);
 
 
