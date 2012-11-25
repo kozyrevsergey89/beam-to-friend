@@ -52,6 +52,12 @@ public class TextMatcher implements Matcher<Map<String, MatchedResult<FacebookSt
 			            out.get(both).getMine().addAll(tokens.get(both));
                         out.get(both).getYours().add(item);
                     }
+                    else{
+                        MatchedResult<FacebookStory> added = new MatchedResult<FacebookStory>();
+                        added.getMine().addAll(tokens.get(both));
+                        added.getYours().add(item);
+                        out.put(both, added);
+                    }
                 }
             }
 		}
