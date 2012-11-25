@@ -33,7 +33,9 @@ public class GetMyInfoService extends IntentService{
 			Bundle bundle = new Bundle();
 			bundle.putString("fields", "friends.fields(id,name),likes.fields(id,name)," +
 					"activities,photos.fields(id,comments.fields(id))," +
-					"posts.fields(id,story,message),feed.fields(id,story,message)");
+					"posts.fields(id,story,message)");
+
+            //,feed.fields(id,story,message)
 
 		runner.request("me",bundle, new TopicRequestListener());	
 		}
