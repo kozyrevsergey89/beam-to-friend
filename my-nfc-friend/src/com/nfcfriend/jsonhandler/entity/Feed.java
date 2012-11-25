@@ -1,6 +1,6 @@
 package com.nfcfriend.jsonhandler.entity;
 
-public class Feed implements FacebookIdentifiable{
+public class Feed implements FacebookIdentifiable, FacebookStory{
 
 	private String id;
     private String story;
@@ -13,6 +13,8 @@ public class Feed implements FacebookIdentifiable{
 	public void setId(String id) {
 		this.id = id;
 	}
+
+    @Override
 	public String getStory() {
 		return story;
 	}

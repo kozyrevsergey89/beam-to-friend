@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 import com.nfcfriend.jsonhandler.entity.MatchedResult;
-import com.nfcfriend.matcher.model.FacebookStory;
+import com.nfcfriend.jsonhandler.entity.FacebookStory;
 
 public class TokenMatcherTest {
 	

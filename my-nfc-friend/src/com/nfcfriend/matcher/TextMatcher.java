@@ -2,7 +2,7 @@ package com.nfcfriend.matcher;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
-import com.nfcfriend.matcher.model.FacebookStory;
+import com.nfcfriend.jsonhandler.entity.FacebookStory;
 import com.nfcfriend.jsonhandler.entity.MatchedResult;
 
 import java.util.ArrayList;
