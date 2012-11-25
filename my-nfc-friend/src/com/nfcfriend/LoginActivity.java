@@ -12,6 +12,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
 public class LoginActivity extends Activity{
 
 	public static final String APP_ID = "384386814977181";
@@ -38,8 +43,10 @@ public class LoginActivity extends Activity{
 										   "friends_hometown","friends_interests","friends_likes",
 										   "friends_location","friends_notes","friends_photos","friends_questions",
 										   "friends_relationships","friends_relationship_details","friends_religion_politics",
-										   "friends_status","friends_subscriptions","friends_videos","friends_website",
-										   "friends_work_history" };
+										   "friends_status","friends_videos","friends_website",
+										   "friends_work_history","read_insights", "read_mailbox", "read_requests", "read_stream",
+                                            "xmpp_login", "ads_management", "create_event", "manage_friendlists", "manage_notifications",
+                                            "user_online_presence", "friends_online_presence", "publish_checkins", "publish_stream","rsvp_event"};
 
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
