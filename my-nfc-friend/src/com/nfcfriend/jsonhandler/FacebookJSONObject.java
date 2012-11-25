@@ -11,6 +11,7 @@ import com.google.gson.Gson;
 import com.nfcfriend.jsonhandler.entity.Activity;
 import com.nfcfriend.jsonhandler.entity.Feed;
 import com.nfcfriend.jsonhandler.entity.Friend;
+import com.nfcfriend.jsonhandler.entity.Group;
 import com.nfcfriend.jsonhandler.entity.Like;
 import com.nfcfriend.jsonhandler.entity.Photo;
 import com.nfcfriend.jsonhandler.entity.Post;
@@ -42,6 +43,10 @@ public class FacebookJSONObject {
 
 	public List<Activity> getActivities() {
 		return this.<Activity> getList(new Activity(), "activities");
+	}
+
+	public List<Group> getGroups() {
+		return this.<Group> getList(new Group(), "groups");
 	}
 
 	public List<Photo> getPhotos() {
