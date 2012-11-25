@@ -34,6 +34,8 @@ public class TestDrive {
 		System.out.println(facebookJSONObject.getPhotos());
 		System.out.println("groups");
 		System.out.println(facebookJSONObject.getGroups());
+		System.out.println("ID");
+		System.out.println(facebookJSONObject.getId());
 	}
 
 	public static JSONObject getJSON() throws IOException, JSONException {
