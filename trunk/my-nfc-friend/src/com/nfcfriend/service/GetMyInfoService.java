@@ -30,12 +30,13 @@ public class GetMyInfoService extends IntentService{
 			facebook = ((NfcApp)getApplication()).getFacebook();
 			runner = new AsyncFacebookRunner(facebook);
 			Bundle bundle = new Bundle();
-			bundle.putString("fields", "friends.fields(id,name),inspirational_people," +
-									   "likes.fields(id,name),activities,events.fields(id)," +
-									   "photos.fields(id,comments.fields(id),tags.fields(id)," +
-									   "sharedposts.fields(id)),tagged.fields(id,story)," +
-									   "posts.fields(id,story,type,via,object_id)," +
-									   "feed.fields(id,story,via,application,object_id),checkins");
+			bundle.putString("fields", "friends.fields(id,name)");
+            /*,inspirational_people," +
+            "likes.fields(id,name),activities,events.fields(id)," +
+                    "photos.fields(id,comments.fields(id),tags.fields(id)," +
+                    "sharedposts.fields(id)),tagged.fields(id,story)," +
+                    "posts.fields(id,story,type,via,object_id)," +
+                    "feed.fields(id,story,via,application,object_id),checkins*/
 		runner.request("me", new TopicRequestListener());	
 		}
 	}
