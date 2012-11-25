@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">my-nfc-friend</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">BEAM IT!</string>
     <string name="menu_settings">Settings</string>
 
 </resources>

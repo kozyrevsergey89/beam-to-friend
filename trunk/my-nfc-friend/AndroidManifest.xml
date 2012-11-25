@@ -43,6 +43,11 @@
             </intent-filter>
         </activity>
         
+        <activity
+            android:name="com.nfcfriend.FriendListActivity"
+            android:screenOrientation="portrait" 
+            />
+        
         <service android:name="com.nfcfriend.service.GetMyInfoService" />
         <service android:name=".service.BeamTranslateService" />
     </application>
