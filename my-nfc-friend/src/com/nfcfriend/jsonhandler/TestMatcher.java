@@ -17,8 +17,8 @@ public class TestMatcher {
     @SuppressWarnings("unchecked")
 	public static void main(String[] args) throws IOException, JSONException {
 
-		JSONObject jsonMine = getJSON("D:\\max\\projects\\beam-to-friend\\my-nfc-friend\\test\\resources\\mine.txt.txt");
-        JSONObject jsonYours = getJSON("D:\\max\\projects\\beam-to-friend\\my-nfc-friend\\test\\resources\\yours.txt.txt");
+		JSONObject jsonMine = getJSON("D:\\max\\projects\\beam-to-friend\\my-nfc-friend\\test\\resources\\mine2.txt");
+        JSONObject jsonYours = getJSON("D:\\max\\projects\\beam-to-friend\\my-nfc-friend\\test\\resources\\david.txt");
 		System.out.println("json object");
 		//System.out.println(jsonMine);
 
