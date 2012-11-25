@@ -7,6 +7,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.util.Log;
+
 import com.google.gson.Gson;
 import com.nfcfriend.jsonhandler.entity.Activity;
 import com.nfcfriend.jsonhandler.entity.Feed;
@@ -23,6 +25,17 @@ public class FacebookJSONObject {
 
 	public FacebookJSONObject(JSONObject jsonObject) {
 		this.jsonObject = jsonObject;
+	}
+
+	public String getId() {
+
+		String id = "";
+		try {
+			id = jsonObject.getString("id");
+		} catch (JSONException e) {
+			Log.e("ERROR", e.toString());
+		}
+		return id;
 	}
 
 	public List<Friend> getFriends() {
