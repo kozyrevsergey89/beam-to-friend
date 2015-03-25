@@ -1,0 +1,1 @@
+Android beam plus facebook adding to friends
